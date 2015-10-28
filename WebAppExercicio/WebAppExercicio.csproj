@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="frmCadCategoria.aspx" />
     <Content Include="frmCadPessoa.aspx" />
+    <Content Include="frmcategoriasfilmes.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +90,13 @@
     </Compile>
     <Compile Include="frmCadPessoa.aspx.designer.cs">
       <DependentUpon>frmCadPessoa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmcategoriasfilmes.aspx.cs">
+      <DependentUpon>frmcategoriasfilmes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmcategoriasfilmes.aspx.designer.cs">
+      <DependentUpon>frmcategoriasfilmes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
