@@ -57,10 +57,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="frmCadCategoria.aspx" />
     <Content Include="frmCadPessoa.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadCategoria.aspx.cs">
+      <DependentUpon>frmCadCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadCategoria.aspx.designer.cs">
+      <DependentUpon>frmCadCategoria.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadPessoa.aspx.cs">
       <DependentUpon>frmCadPessoa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
