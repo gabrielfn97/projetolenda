@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppExercicio", "WebAppExercicio\WebAppExercicio.csproj", "{6354974B-709C-4836-A26C-2073E06DA9E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{DE6F5379-2A8D-40C7-909B-3C0934B5BE6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistencia", "Persistencia\Persistencia.csproj", "{9719117D-3FCF-4F1E-9F4A-E7451EED2BAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6354974B-709C-4836-A26C-2073E06DA9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6354974B-709C-4836-A26C-2073E06DA9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6354974B-709C-4836-A26C-2073E06DA9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6354974B-709C-4836-A26C-2073E06DA9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6F5379-2A8D-40C7-909B-3C0934B5BE6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6F5379-2A8D-40C7-909B-3C0934B5BE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6F5379-2A8D-40C7-909B-3C0934B5BE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6F5379-2A8D-40C7-909B-3C0934B5BE6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9719117D-3FCF-4F1E-9F4A-E7451EED2BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9719117D-3FCF-4F1E-9F4A-E7451EED2BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9719117D-3FCF-4F1E-9F4A-E7451EED2BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9719117D-3FCF-4F1E-9F4A-E7451EED2BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
