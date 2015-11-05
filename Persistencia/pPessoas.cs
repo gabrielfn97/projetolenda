@@ -25,22 +25,12 @@ namespace Persistencia
 
         }
 
-        public void apagar() 
+        public void deletar() 
         {
         
         }
 
         public Object consultarTodos() 
-        {
-            return 1;        
-        }
-
-        public String buscar_CPF()
-        {
-            return "";
-        }
-
-        public int calcularIdade()
         {
             return 1;        
         }

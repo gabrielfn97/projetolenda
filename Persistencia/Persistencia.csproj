@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Conexao.cs" />
+    <Compile Include="pCategoria.cs" />
     <Compile Include="pPessoas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
