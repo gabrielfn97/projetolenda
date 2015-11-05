@@ -62,6 +62,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadLogin.aspx.cs">
+      <DependentUpon>frmCadLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadLogin.aspx.designer.cs">
+      <DependentUpon>frmCadLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="categorias_filmes.aspx.cs">
+      <DependentUpon>categorias_filmes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="categorias_filmes.aspx.designer.cs">
+      <DependentUpon>categorias_filmes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadCategoria.aspx.cs">
       <DependentUpon>frmCadCategoria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
