@@ -14,7 +14,7 @@ namespace Persistencia
 
         public void inserir(String cpf, String nome, String dataNascimento) 
         {
-            String SQL = "INSERT INTO Pessoas(cpf, nome, dtNasc) VALUES("+cpf+",'"+nome+"','"+dataNascimento+"')";
+            String SQL = "INSERT INTO dbo.Pessoas(cpf, nome, dtNasc) VALUES("+cpf+",'"+nome+"','"+dataNascimento+"')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
