@@ -43,6 +43,7 @@
     <Compile Include="Conexao.cs" />
     <Compile Include="pCategorias.cs" />
     <Compile Include="pCategoria.cs" />
+    <Compile Include="pLogin.cs" />
     <Compile Include="pPessoas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
