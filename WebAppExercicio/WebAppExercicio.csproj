@@ -57,7 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="categorias_filmes.aspx" />
     <Content Include="frmCadCategoria.aspx" />
+    <Content Include="frmCadLogin.aspx" />
     <Content Include="frmCadPessoa.aspx" />
     <Content Include="frmcategoriasfilmes.aspx" />
     <Content Include="Web.config" />
