@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadEstado.cs" />
     <Compile Include="CadLogin.cs" />
     <Compile Include="Genero.cs" />
     <Compile Include="Categoria.cs" />
