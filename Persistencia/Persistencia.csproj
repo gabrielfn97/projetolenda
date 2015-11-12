@@ -41,7 +41,7 @@
   <ItemGroup>
     <Compile Include="pCadLogin.cs" />
     <Compile Include="Conexao.cs" />
-    <Compile Include="pCategorias.cs" />
+    <Compile Include="pGenero.cs" />
     <Compile Include="pCategoria.cs" />
     <Compile Include="pLogin.cs" />
     <Compile Include="pPessoas.cs" />

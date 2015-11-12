@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CadLogin.cs" />
+    <Compile Include="Genero.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
