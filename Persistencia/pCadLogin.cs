@@ -14,15 +14,12 @@ namespace Persistencia
 
         public void inserir(String email, String usuario, String senha)
         {
-            String SQL = "INSERT INTO CadLogin(email, usuario, senha) VALUES(" + email + ",'" + usuario + "','" + senha + "')";
+            String SQL = "INSERT INTO dbo.CadLogin(email, usuario, senha) VALUES('" + email + "','" + usuario + "','" + senha + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
-        //{
-            //pCadLogin objCadLogin = new pCadLogin();
-           // objCadLogin.inserir(email, usuario, senha);
-        //}//
+       
 
         public void alterar()
         {
