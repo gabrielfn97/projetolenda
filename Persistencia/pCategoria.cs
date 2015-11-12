@@ -14,7 +14,7 @@ namespace Persistencia
 
         public void inserir(String descricao, String idClassificacao)
         {
-            String SQL = "INSERT INTO Categoria(descricao, idClassificacao) VALUES('" + descricao + "', " + Convert.ToInt32(idClassificacao) + ")";
+            String SQL = "INSERT INTO dbo.Categoria(descricao, idClassificacao) VALUES('" + descricao + "', " + Convert.ToInt32(idClassificacao) + ")";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
