@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using Negocio;
 
 
@@ -18,18 +17,15 @@ namespace WebAppExercicio
 
         }
 
-        protected void btnInserir_Click(object sender, EventArgs e)
-        {
-            Categoria objCategoria = new Categoria(); 
-            objCategoria.inserir(txtdescricao.Text, txtNdoFilme.Text);
-        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Categoria oCategoria = new Categoria();
+            oCategoria.inserir(txtdescricao.Text, txtNdoFilme.Text);
 
         }
 
-        
+             
       
 
     }

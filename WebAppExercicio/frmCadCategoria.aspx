@@ -15,11 +15,10 @@
         <asp:Label ID="Label2" runat="server" Text="Numero do Filme"></asp:Label>
         <asp:TextBox ID="txtNdoFilme" runat="server"></asp:TextBox>
     
+        <br />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Inserir" />
+    
     </div>
-        <asp:Button ID="btnInserir" runat="server" OnClick="Button1_Click" Text="Inserir" />
-        <asp:Button ID="Button2" runat="server" Text="Alterar" />
-        <asp:Button ID="Button3" runat="server" Text="Deletar" OnClick="Button3_Click" />
-        <asp:Button ID="Button4" runat="server" Text="Consultar" />
     </form>
 </body>
 </html>
