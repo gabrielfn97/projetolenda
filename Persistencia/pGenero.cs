@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Persistencia
 {
-    public class pCategorias
+    public class pGenero
     {
         String generos;
 
 
         public void inserir(String generos)
         {
-            String SQL = "INSERT INTO Categorias (generos) VALUES(" + generos + ")";
+            String SQL = "INSERT INTO dbo.Generos (generos) VALUES('" + generos + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
