@@ -20,7 +20,7 @@ namespace Persistencia
 
         public void inserir(String NomeFilmes, String Classificacao, String Genero, String Iframe, String UrlImg, String Nota, String DataLancamento, String AtoresPrincipais, String Nacionalidade)
         {
-            String SQL = "INSERT INTO dbo.CadLogin(NomeFilmes, Classificacao, Genero, Iframe, UrlImg, Nota, DataLancamento, AtoresPrincipais, Nacionalidade) VALUES('" + NomeFilmes + "','" + Classificacao + "','" + Genero + "','" + Iframe + "','" + UrlImg + "','" + Nota + "','" + DataLancamento + "','" + AtoresPrincipais + "','" + Nacionalidade + "')";
+            String SQL = "INSERT INTO dbo.CadFilmes(NomeFilmes, Classificacao, Genero, Iframe, UrlImg, Nota, DataLancamento, AtoresPrincipais, Nacionalidade) VALUES('" + NomeFilmes + "','" + Classificacao + "','" + Genero + "','" + Iframe + "','" + UrlImg + "','" + Nota + "','" + DataLancamento + "','" + AtoresPrincipais + "','" + Nacionalidade + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
