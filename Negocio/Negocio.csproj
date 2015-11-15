@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CadEstado.cs" />
+    <Compile Include="CadFilmes.cs" />
     <Compile Include="CadLogin.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="Class1.cs" />

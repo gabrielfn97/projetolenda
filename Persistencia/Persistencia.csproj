@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="pCadEstado.cs" />
+    <Compile Include="pCadFilmes.cs" />
     <Compile Include="pCadLogin.cs" />
     <Compile Include="Conexao.cs" />
     <Compile Include="pGenero.cs" />

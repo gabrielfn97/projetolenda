@@ -17,7 +17,7 @@ namespace WebAppExercicio
 
         protected void btnInserir_Click(object sender, EventArgs e)
         {
-            CadLogin oCadLogin = new CadLogin();
+            CadFilmes oCadLogin = new CadFilmes();
             oCadLogin.inserir(txtEmail.Text, txtSenha.Text, txtUsuario.Text);
         }
     }
