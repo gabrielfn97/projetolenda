@@ -21,7 +21,7 @@
         <asp:TextBox ID="txtGenero" runat="server"></asp:TextBox>
         <br />
         Iframe Youtube:
-        <asp:TextBox ID="txtIframeYoutube" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtIframeYoutube" runat="server" OnTextChanged="txtIframeYoutube_TextChanged"></asp:TextBox>
         <br />
         URL Imagem:
         <asp:TextBox ID="txtURLImagem" runat="server"></asp:TextBox>
@@ -38,7 +38,7 @@
         Nacionalidade:
         <asp:TextBox ID="txtNacionalidade" runat="server"></asp:TextBox>
         <br />
-        <asp:Button ID="btnInserir" runat="server" Text="Inserir" />
+        <asp:Button ID="btnInserir" runat="server" Text="Inserir" OnClick="btnInserir_Click" />
 &nbsp;<asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
 &nbsp;<asp:Button ID="btnDeletar" runat="server" Text="Deletar" />
 &nbsp;<asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
