@@ -21,7 +21,7 @@
         <asp:TextBox ID="txtGenero" runat="server"></asp:TextBox>
         <br />
         Iframe Youtube:
-        <asp:TextBox ID="txtIframeYoutube" runat="server" OnTextChanged="txtIframeYoutube_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="txtIframe" runat="server"></asp:TextBox>
         <br />
         URL Imagem:
         <asp:TextBox ID="txtURLImagem" runat="server"></asp:TextBox>
