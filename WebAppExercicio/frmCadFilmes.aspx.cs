@@ -18,7 +18,8 @@ namespace WebAppExercicio
         protected void btnInserir_Click(object sender, EventArgs e)
         {
             CadFilmes oCadFilmes = new CadFilmes();
-            oCadFilmes.inserir(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLancamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
+            oCadFilmes.inserir(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
         }
+
     }
 }

@@ -30,7 +30,7 @@
         <asp:TextBox ID="txtNota" runat="server"></asp:TextBox>
         <br />
         Data de Lançamento:
-        <asp:TextBox ID="txtDataLancamento" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtDataLacamento" runat="server"></asp:TextBox>
         <br />
         Atores Principais:
         <asp:TextBox ID="txtAtoresPrincipais" runat="server"></asp:TextBox>

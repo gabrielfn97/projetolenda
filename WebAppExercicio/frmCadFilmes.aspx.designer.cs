@@ -76,13 +76,13 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.TextBox txtNota;
         
         /// <summary>
-        /// Controle txtDataLancamento.
+        /// Controle txtDataLacamento.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDataLancamento;
+        protected global::System.Web.UI.WebControls.TextBox txtDataLacamento;
         
         /// <summary>
         /// Controle txtAtoresPrincipais.
