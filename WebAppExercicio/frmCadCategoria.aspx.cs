@@ -28,14 +28,14 @@ namespace WebAppExercicio
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
             Categoria objCategoria = new Categoria();
-            objCategoria.alterar(txtdescricao.Text, txtNdoFilme.Text);
+            objCategoria.alterar(txtdescricao.Text, Convert.ToInt32(txtNdoFilme.Text));
             Response.Redirect(Request.RawUrl);
         }
 
         protected void btnApagar_Click(object sender, EventArgs e)
         {
             Categoria objCategoria = new Categoria();
-            objCategoria.apagar(txtdescricao.Text, txtNdoFilme.Text);
+            objCategoria.apagar(txtdescricao.Text, Convert.ToInt32(txtNdoFilme.Text));
             Response.Redirect(Request.RawUrl);
         }
 
