@@ -18,19 +18,22 @@ namespace Negocio
             objLogin.inserir(senha, login);
         }
 
-        public void alterar()
+        public void alterar(String login, String senha)
         {
-
+            pLogin objLogin = new pLogin();
+            objLogin.alterar(senha, login);
         }
 
-        public void apagar()
+        public void apagar(String login, String senha)
         {
-
+            pLogin objLogin = new pLogin();
+            objLogin.apagar(senha, login);
         }
 
         public Object consultarTodos()
         {
-            return 1;
+            pLogin objLogin = new pLogin();
+            return objLogin.consultarTodos();
         }
 
     }

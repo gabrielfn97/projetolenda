@@ -17,19 +17,22 @@ namespace Negocio
             objGenero.inserir(generos);
         }
 
-        public void alterar()
+        public void alterar(String generos)
         {
-
+            pGenero objGenero = new pGenero();
+            objGenero.alterar(generos);
         }
 
-        public void deletar()
+        public void apagar(String generos)
         {
-
+            pGenero objGenero = new pGenero();
+            objGenero.apagar(generos);
         }
 
         public Object consultarTodos()
         {
-            return 1;
+            pGenero objGenero = new pGenero();
+            return objGenero.consultarTodos();
         }
 
 

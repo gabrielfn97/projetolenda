@@ -18,19 +18,22 @@ namespace Negocio
             objCategoria.inserir(descricao, idClassificacao);
         }
 
-        public void alterar()
+        public void alterar(String descricao, String idClassificacao)
         {
-
+            pCategoria objCategoria = new pCategoria();
+            objCategoria.alterar(descricao, idClassificacao);
         }
 
-        public void deletar()
+        public void apagar(String descricao, String idClassificacao)
         {
-
+            pCategoria objCategoria = new pCategoria();
+            objCategoria.apagar(descricao, idClassificacao);
         }
 
         public Object consultarTodos()
         {
-            return 1;
+            pCategoria objCategoria = new pCategoria();
+            return objCategoria.consultarTodos();
         }
 
 

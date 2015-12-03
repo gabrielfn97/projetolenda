@@ -26,19 +26,22 @@ namespace Negocio
             objCadFilmes.inserir(NomeFilmes, Classificacao, Genero, Iframe, UrlImg, Nota, DataLacamento, AtoresPrincipais, Nacionalidade);
         }
 
-        public void alterar()
+        public void alterar(String NomeFilmes, String Classificacao, String Genero, String Iframe, String UrlImg, String Nota, String DataLacamento, String AtoresPrincipais, String Nacionalidade)
         {
-
+            pCadFilmes objCadFilmes = new pCadFilmes();
+            objCadFilmes.alterar(NomeFilmes, Classificacao, Genero, Iframe, UrlImg, Nota, DataLacamento, AtoresPrincipais, Nacionalidade);
         }
 
-        public void apagar()
+        public void apagar(String NomeFilmes, String Classificacao, String Genero, String Iframe, String UrlImg, String Nota, String DataLacamento, String AtoresPrincipais, String Nacionalidade)
         {
-
+            pCadFilmes objCadFilmes = new pCadFilmes();
+            objCadFilmes.apagar(NomeFilmes, Classificacao, Genero, Iframe, UrlImg, Nota, DataLacamento, AtoresPrincipais, Nacionalidade);
         }
 
         public Object consultarTodos()
         {
-            return 1;
+            pCadFilmes objCadFilmes = new pCadFilmes();
+            return objCadFilmes.consultarTodos();
         }
 
 

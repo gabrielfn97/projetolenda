@@ -21,19 +21,22 @@ namespace Negocio
             objVotacaoFilme.inserir(idLogin, idFilme, qtdEstrela);
         }
 
-        public void alterar()
+        public void alterar(String idLogin, String idFilme, String qtdEstrela)
         {
-
+            pVotacaoFilme objVotacaoFilme = new pVotacaoFilme();
+            objVotacaoFilme.alterar(idLogin, idFilme, qtdEstrela);
         }
 
-        public void apagar()
+        public void apagar(String idLogin, String idFilme, String qtdEstrela)
         {
-
+            pVotacaoFilme objVotacaoFilme = new pVotacaoFilme();
+            objVotacaoFilme.apagar(idLogin, idFilme, qtdEstrela);
         }
 
         public Object consultarTodos()
         {
-            return 1;
+            pVotacaoFilme objVotacaoFilme = new pVotacaoFilme();
+            return objVotacaoFilme.consultarTodos();
         }
 
     }

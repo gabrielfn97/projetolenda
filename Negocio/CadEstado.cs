@@ -19,19 +19,22 @@ namespace Negocio
             objCadEstado.inserir(estado,sigla);
         }
 
-        public void alterar()
+        public void alterar(String estado, String sigla)
         {
-
+            pCadEstado objCadEstado = new pCadEstado();
+            objCadEstado.alterar(estado, sigla);
         }
 
-        public void apagar()
+        public void apagar(String estado, String sigla)
         {
-
+            pCadEstado objCadEstado = new pCadEstado();
+            objCadEstado.apagar(estado, sigla);
         }
 
         public Object consultarTodos()
         {
-            return 1;
+            pCadEstado objCadEstado = new pCadEstado();
+            return objCadEstado.consultarTodos();
         }
 
        

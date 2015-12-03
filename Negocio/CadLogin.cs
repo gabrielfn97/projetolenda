@@ -19,19 +19,22 @@ namespace Negocio
             objCadLogin.inserir(email, usuario, senha);
         }
 
-        public void alterar()
+        public void alterar(String email, String usuario, String senha)
         {
-
+            pCadLogin objCadLogin = new pCadLogin();
+            objCadLogin.alterar(email, usuario, senha);
         }
 
-        public void apagar()
+        public void apagar(String email, String usuario, String senha)
         {
-
+            pCadLogin objCadLogin = new pCadLogin();
+            objCadLogin.apagar(email, usuario, senha);
         }
 
         public Object consultarTodos()
         {
-            return 1;
+            pCadLogin objCadLogin = new pCadLogin();
+            return objCadLogin.consultarTodos();
         }
 
 
