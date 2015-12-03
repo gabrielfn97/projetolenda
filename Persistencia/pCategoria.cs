@@ -11,6 +11,7 @@ namespace Persistencia
 {
     public class pCategoria
     {
+        String idCategoria;
         String descricao;
         int idClassificacao;
 
@@ -35,7 +36,7 @@ namespace Persistencia
 
         public void apagar(String descricao, int idClassificacao)
         {
-            String SQL = "DELETE dbo.Categoria WHERE descricao =" + descricao;
+            String SQL = "DELETE dbo.Categoria WHERE idCategoria =" + idCategoria;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
