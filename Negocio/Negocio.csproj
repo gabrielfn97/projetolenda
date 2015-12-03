@@ -43,15 +43,11 @@
     <Compile Include="CadFilmes.cs" />
     <Compile Include="CadLogin.cs" />
     <Compile Include="Categoria.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
     <Compile Include="Genero.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Login.cs" />
-    <Compile Include="Pessoas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teste3.cs" />
     <Compile Include="VotacaoFilme.cs" />
   </ItemGroup>
   <ItemGroup>
