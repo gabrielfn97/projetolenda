@@ -57,7 +57,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="categorias_filmes.aspx" />
     <Content Include="frmCadCategoria.aspx" />
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadFilmes.aspx" />
@@ -88,13 +87,6 @@
     </Compile>
     <Compile Include="frmCadLogin.aspx.designer.cs">
       <DependentUpon>frmCadLogin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="categorias_filmes.aspx.cs">
-      <DependentUpon>categorias_filmes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="categorias_filmes.aspx.designer.cs">
-      <DependentUpon>categorias_filmes.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmCadCategoria.aspx.cs">
       <DependentUpon>frmCadCategoria.aspx</DependentUpon>

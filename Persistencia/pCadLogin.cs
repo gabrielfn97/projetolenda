@@ -59,6 +59,20 @@ namespace Persistencia
             return ds;
         }
 
+        public Object logar()
+        {
+            String SQL = "SELECT * FROM dbo.CadLogin WHERE usuario = '" + usuario + "', senha = '" + senha + "'";
+
+            Conexao oConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+
+            oConexao.fechaConexao();
+
+            return ds;
+        }
 
     }
 }

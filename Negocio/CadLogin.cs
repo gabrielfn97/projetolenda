@@ -37,6 +37,10 @@ namespace Negocio
             return objCadLogin.consultarTodos();
         }
 
-
+        public Object logar()
+        {
+            pCadLogin objCadLogin = new pCadLogin();
+            return objCadLogin.logar();
+        }
     }
 }
