@@ -9,7 +9,7 @@ namespace Persistencia
 {
     class Conexao
     {
-        SqlConnection cn = new SqlConnection();
+       public SqlConnection cn = new SqlConnection();
         
         //Construtor da Classe
         public Conexao(String banco)

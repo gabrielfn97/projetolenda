@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,19 +22,39 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void alterar()
+        public void alterar(String descricao, int idClassificacao)
         {
+            String SQL = "UPDATE dbo.Categoria";
+            SQL += "'SET descricao = '" + descricao + "', idClassificacao = '" + Convert.ToInt32(idClassificacao) + "'";
+            SQL += "WHERE descricao = " + descricao;
 
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
 
-        public void deletar()
+        public void apagar(String descricao, int idClassificacao)
         {
+            String SQL = "DELETE dbo.Categoria WHERE descricao =" + descricao;
 
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
         }
 
         public Object consultarTodos()
         {
-            return 1;
+            String SQL = "SELECT * FROM dbo.Categoria";
+
+            Conexao oConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+
+            oConexao.fechaConexao();
+
+            return ds;
         }
 
         
