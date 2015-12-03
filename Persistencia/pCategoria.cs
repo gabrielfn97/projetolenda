@@ -43,7 +43,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public Object consultarTodos()
+        public DataSet consultarTodos()
         {
             String SQL = "SELECT * FROM dbo.Categoria";
 
