@@ -16,7 +16,7 @@
         <asp:TextBox ID="txtNdoFilme" runat="server"></asp:TextBox>
     
         <br />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Inserir" />
+        <asp:Button ID="btnInserir" runat="server" OnClick="Button1_Click" Text="Inserir" />
     
         <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
     

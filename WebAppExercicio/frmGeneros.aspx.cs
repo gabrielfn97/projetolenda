@@ -17,21 +17,21 @@ namespace WebAppExercicio
 
         protected void btnInserir_Click(object sender, EventArgs e)
         {
-            Genero oGenero = new Genero();
-            oGenero.inserir(txtGeneros.Text);
+            Genero objGenero = new Genero();
+            objGenero.inserir(txtGeneros.Text);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
-            Genero oGenero = new Genero();
-            oGenero.alterar(txtGeneros.Text);
+            Genero objGenero = new Genero();
+            objGenero.alterar(txtGeneros.Text);
             Response.Redirect(Request.RawUrl);
         }
 
         protected void btnApagar_Click(object sender, EventArgs e)
         {
-            Genero oGenero = new Genero();
-            oGenero.apagar(txtGeneros.Text);
+            Genero objGenero = new Genero();
+            objGenero.apagar(txtGeneros.Text);
             Response.Redirect(Request.RawUrl);
         }
     }

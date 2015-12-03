@@ -17,21 +17,21 @@ namespace WebAppExercicio
 
         protected void btnInserir_Click(object sender, EventArgs e)
         {
-            CadFilmes oCadFilmes = new CadFilmes();
-            oCadFilmes.inserir(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
+            CadFilmes objCadFilmes = new CadFilmes();
+            objCadFilmes.inserir(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
-            CadFilmes oCadFilmes = new CadFilmes();
-            oCadFilmes.alterar(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
+            CadFilmes objCadFilmes = new CadFilmes();
+            objCadFilmes.alterar(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
             Response.Redirect(Request.RawUrl);
         }
 
         protected void btnApagar_Click(object sender, EventArgs e)
         {
-            CadFilmes oCadFilmes = new CadFilmes();
-            oCadFilmes.apagar(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
+            CadFilmes objCadFilmes = new CadFilmes();
+            objCadFilmes.apagar(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
             Response.Redirect(Request.RawUrl);
         }
 

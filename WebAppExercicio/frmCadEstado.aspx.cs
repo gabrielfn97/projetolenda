@@ -17,21 +17,21 @@ namespace WebAppExercicio
 
         protected void btnInserir_Click(object sender, EventArgs e)
         {
-            CadEstado oCadEstado = new CadEstado();
-            oCadEstado.inserir( txtEstado.Text, txtSigla.Text);
+            CadEstado objCadEstado = new CadEstado();
+            objCadEstado.inserir( txtEstado.Text, txtSigla.Text);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
-            CadEstado oCadEstado = new CadEstado();
-            oCadEstado.alterar(txtEstado.Text, txtSigla.Text);
+            CadEstado objCadEstado = new CadEstado();
+            objCadEstado.alterar(txtEstado.Text, txtSigla.Text);
             Response.Redirect(Request.RawUrl);
         }
 
         protected void btnApagar_Click(object sender, EventArgs e)
         {
-            CadEstado oCadEstado = new CadEstado();
-            oCadEstado.apagar(txtEstado.Text, txtSigla.Text);
+            CadEstado objCadEstado = new CadEstado();
+            objCadEstado.apagar(txtEstado.Text, txtSigla.Text);
             Response.Redirect(Request.RawUrl);
         }
     }
