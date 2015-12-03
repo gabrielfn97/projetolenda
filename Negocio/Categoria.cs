@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -30,7 +31,7 @@ namespace Negocio
             objCategoria.apagar(descricao, idClassificacao);
         }
 
-        public Object consultarTodos()
+        public DataSet consultarTodos()
         {
             pCategoria objCategoria = new pCategoria();
             return objCategoria.consultarTodos();
