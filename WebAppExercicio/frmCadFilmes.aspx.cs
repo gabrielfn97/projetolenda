@@ -21,5 +21,12 @@ namespace WebAppExercicio
             oCadFilmes.inserir(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
         }
 
+        protected void btnAlterar_Click(object sender, EventArgs e)
+        {
+            CadFilmes oCadFilmes = new CadFilmes();
+            oCadFilmes.alterar(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
+            Response.Redirect(Request.RawUrl);
+        }
+
     }
 }

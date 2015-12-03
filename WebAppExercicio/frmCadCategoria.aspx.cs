@@ -25,6 +25,13 @@ namespace WebAppExercicio
 
         }
 
+        protected void btnAlterar_Click(object sender, EventArgs e)
+        {
+            Categoria oCategoria = new Categoria();
+            oCategoria.alterar(txtdescricao.Text, txtNdoFilme.Text);
+            Response.Redirect(Request.RawUrl);
+        }
+
              
       
 
