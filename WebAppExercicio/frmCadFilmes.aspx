@@ -39,7 +39,7 @@
         <asp:TextBox ID="txtNacionalidade" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="btnInserir" runat="server" Text="Inserir" OnClick="btnInserir_Click" />
-&nbsp;<asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
+&nbsp;<asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" style="height: 29px" />
 &nbsp;<asp:Button ID="btnDeletar" runat="server" Text="Deletar" />
 &nbsp;<asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
 &nbsp;<asp:Button ID="btnCartaz" runat="server" Text="Cartaz" />
