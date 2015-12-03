@@ -10,6 +10,7 @@ namespace Persistencia
 {
     public class pGenero
     {
+        String idGeneros;
         String generos;
 
 
@@ -25,7 +26,7 @@ namespace Persistencia
         {
             String SQL = "UPDATE dbo.Generos";
             SQL += "'SET generos = '" + generos + "'";
-            SQL += "WHERE generos = " + generos;
+            SQL += "WHERE1 idGeneros = " + idGeneros;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
@@ -34,7 +35,7 @@ namespace Persistencia
 
         public void apagar(String generos)
         {
-            String SQL = "DELETE dbo.Generos WHERE generos =" + generos;
+            String SQL = "DELETE dbo.Generos WHERE idGeneros =" + idGeneros;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);

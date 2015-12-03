@@ -10,6 +10,7 @@ namespace Persistencia
 {
     public class pCadLogin
     {
+        String idCadLogin;
         String email;
         String usuario;
         String senha;
