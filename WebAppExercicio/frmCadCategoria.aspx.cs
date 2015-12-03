@@ -32,6 +32,13 @@ namespace WebAppExercicio
             Response.Redirect(Request.RawUrl);
         }
 
+        protected void btnApagar_Click(object sender, EventArgs e)
+        {
+            Categoria oCategoria = new Categoria();
+            oCategoria.apagar(txtdescricao.Text, txtNdoFilme.Text);
+            Response.Redirect(Request.RawUrl);
+        }
+
              
       
 

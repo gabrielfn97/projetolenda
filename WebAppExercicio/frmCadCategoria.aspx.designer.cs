@@ -67,16 +67,6 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// gdvCadCategoria control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gdvCadCategoria;
-        
-        /// <summary>
-        /// Controle Button2.
         /// btnAlterar control.
         /// </summary>
         /// <remarks>
@@ -86,13 +76,13 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.Button btnAlterar;
         
         /// <summary>
-        /// Button2 control.
+        /// btnApagar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnApagar;
         
         /// <summary>
         /// Button3 control.
@@ -102,5 +92,14 @@ namespace WebAppExercicio {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button3;
+        
+        /// <summary>
+        /// gdvCadCategoria control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gdvCadCategoria;
     }
 }

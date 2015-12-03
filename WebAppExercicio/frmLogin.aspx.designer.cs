@@ -76,13 +76,13 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.Button btnAlterar;
         
         /// <summary>
-        /// Button3 control.
+        /// btnApagar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button btnApagar;
         
         /// <summary>
         /// Button4 control.

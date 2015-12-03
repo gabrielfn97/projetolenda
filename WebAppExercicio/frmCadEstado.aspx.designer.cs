@@ -67,13 +67,13 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.Button btnInserir;
         
         /// <summary>
-        /// Controle btnDeletar.
+        /// btnDeletar control.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDeletar;
+        protected global::System.Web.UI.WebControls.Button btnApagar;
         
         /// <summary>
         /// Controle btnConsutar.

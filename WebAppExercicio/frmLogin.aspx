@@ -18,7 +18,7 @@
         <br />
         <asp:Button ID="btnInserir" runat="server" OnClick="btnInserir_Click" Text="Inserir" />
         <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
-        <asp:Button ID="Button3" runat="server" Text="Button" />
+        <asp:Button ID="btnApagar" runat="server" Text="Apagar" OnClick="btnApagar_Click" />
         <asp:Button ID="Button4" runat="server" Text="Button" />
     
     </div>
