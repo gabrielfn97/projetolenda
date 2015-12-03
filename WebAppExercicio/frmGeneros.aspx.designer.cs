@@ -49,6 +49,15 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.Button btnInserir;
         
         /// <summary>
+        /// gdvGeneros control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gdvGeneros;
+        
+        /// <summary>
         /// btnAlterar control.
         /// </summary>
         /// <remarks>

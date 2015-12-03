@@ -44,7 +44,11 @@
 &nbsp;<asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
 &nbsp;<asp:Button ID="btnCartaz" runat="server" Text="Cartaz" />
     
+        <br />
+    
     </div>
+        <asp:GridView ID="gdvCadFilmes" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" Height="178px" PageSize="5" Width="239px">
+        </asp:GridView>
     </form>
 </body>
 </html>
