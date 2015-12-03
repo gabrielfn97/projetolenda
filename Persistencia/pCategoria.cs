@@ -27,7 +27,7 @@ namespace Persistencia
         {
             String SQL = "UPDATE dbo.Categoria";
             SQL += "'SET descricao = '" + descricao + "', idClassificacao = '" + Convert.ToInt32(idClassificacao) + "'";
-            SQL += "WHERE descricao = " + descricao;
+            SQL += "WHERE  idCategoria =  " + idCategoria;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);

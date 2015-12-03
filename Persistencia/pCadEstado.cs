@@ -10,7 +10,7 @@ namespace Persistencia
 {
     public class pCadEstado
     {
-   
+        String idCadEstado;
         String estado;
         String sigla;
 
@@ -27,7 +27,7 @@ namespace Persistencia
         {
             String SQL = "UPDATE dbo.CadEstado";
             SQL += "'SET estado = '" + estado + "', sigla = '" + sigla + "'";
-            SQL += "WHERE estado = " + estado;
+            SQL += "WHERE idCadEstado = " + idCadEstado;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
@@ -37,7 +37,7 @@ namespace Persistencia
 
         public void apagar(String estado, String sigla)
         {
-            String SQL = "DELETE dbo.CadEstado WHERE estado =" + estado;
+            String SQL = "DELETE dbo.CadEstado WHERE idCadEstado =" + idCadEstado;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
