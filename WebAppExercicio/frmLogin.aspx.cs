@@ -27,5 +27,12 @@ namespace WebAppExercicio
             objLogin.alterar(txtLogin.Text, txtSenha.Text);
             Response.Redirect(Request.RawUrl);
         }
+
+        protected void btnApagar_Click(object sender, EventArgs e)
+        {
+            Login objLogin = new Login();
+            objLogin.apagar(txtLogin.Text, txtSenha.Text);
+            Response.Redirect(Request.RawUrl);
+        }
     }
 }

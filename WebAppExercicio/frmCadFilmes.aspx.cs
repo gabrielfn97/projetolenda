@@ -28,5 +28,12 @@ namespace WebAppExercicio
             Response.Redirect(Request.RawUrl);
         }
 
+        protected void btnApagar_Click(object sender, EventArgs e)
+        {
+            CadFilmes oCadFilmes = new CadFilmes();
+            oCadFilmes.apagar(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
+            Response.Redirect(Request.RawUrl);
+        }
+
     }
 }

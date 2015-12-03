@@ -27,5 +27,13 @@ namespace WebAppExercicio
             oCadLogin.alterar(txtEmail.Text, txtSenha.Text, txtUsuario.Text);
             Response.Redirect(Request.RawUrl);
         }
+
+        protected void btnApagar_Click(object sender, EventArgs e)
+        {
+
+            CadLogin oCadLogin = new CadLogin();
+            oCadLogin.apagar(txtEmail.Text, txtSenha.Text, txtUsuario.Text);
+            Response.Redirect(Request.RawUrl);
+        }
     }
 }

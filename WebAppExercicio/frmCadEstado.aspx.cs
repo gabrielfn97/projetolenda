@@ -27,5 +27,12 @@ namespace WebAppExercicio
             oCadEstado.alterar(txtEstado.Text, txtSigla.Text);
             Response.Redirect(Request.RawUrl);
         }
+
+        protected void btnApagar_Click(object sender, EventArgs e)
+        {
+            CadEstado oCadEstado = new CadEstado();
+            oCadEstado.apagar(txtEstado.Text, txtSigla.Text);
+            Response.Redirect(Request.RawUrl);
+        }
     }
 }

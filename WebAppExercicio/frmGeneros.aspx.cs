@@ -27,5 +27,12 @@ namespace WebAppExercicio
             oGenero.alterar(txtGeneros.Text);
             Response.Redirect(Request.RawUrl);
         }
+
+        protected void btnApagar_Click(object sender, EventArgs e)
+        {
+            Genero oGenero = new Genero();
+            oGenero.apagar(txtGeneros.Text);
+            Response.Redirect(Request.RawUrl);
+        }
     }
 }
