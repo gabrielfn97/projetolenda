@@ -10,6 +10,7 @@ namespace Persistencia
 {
     public class pLogin
     {
+        String idLogin;
         String login;
         String senha;
 
@@ -25,7 +26,7 @@ namespace Persistencia
         {
             String SQL = "UPDATE dbo.Pessoas";
             SQL += "'SET login = '" + login + "', senha = '" + senha + "'";
-            SQL += "WHERE login = " + login;
+            SQL += "WHERE idLogin = " + idLogin;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
@@ -34,7 +35,7 @@ namespace Persistencia
 
         public void apagar(String login, String senha)
         {
-            String SQL = "DELETE dbo.Pessoas WHERE login =" + login;
+            String SQL = "DELETE dbo.Pessoas WHERE idLogin =" + idLogin;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);

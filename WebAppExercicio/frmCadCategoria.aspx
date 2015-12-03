@@ -18,6 +18,8 @@
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Inserir" />
     
+        <asp:Button ID="Button2" runat="server" Text="Button" />
+    
     </div>
         <asp:GridView ID="gdvCadCategoria" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="218px" PageSize="5" Width="220px">
             <AlternatingRowStyle BackColor="#F7F7F7" />

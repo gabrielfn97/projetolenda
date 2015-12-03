@@ -10,6 +10,7 @@ namespace Persistencia
 {
     public class pCadLogin
     {
+        String idCadLogin;
         String email;
         String usuario;
         String senha;
@@ -27,7 +28,7 @@ namespace Persistencia
         {
             String SQL = "UPDATE dbo.CadLogin";
             SQL += "'SET email = '" + email + "', usuario = '" + usuario + "', senha = '" + senha + "'";
-            SQL += "WHERE email = " + email;
+            SQL += "WHERE idCadLogin = " + idCadLogin;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
@@ -36,7 +37,7 @@ namespace Persistencia
 
         public void apagar(String email, String usuario, String senha)
         {
-            String SQL = "DELETE dbo.CadLogin WHERE email =" + email;
+            String SQL = "DELETE dbo.CadLogin WHERE idCadLogin =" + idCadLogin;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
@@ -58,6 +59,20 @@ namespace Persistencia
             return ds;
         }
 
+        public Object logar()
+        {
+            String SQL = "SELECT * FROM dbo.CadLogin WHERE usuario = '" + usuario + "', senha = '" + senha + "'";
+
+            Conexao oConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+
+            oConexao.fechaConexao();
+
+            return ds;
+        }
 
     }
 }

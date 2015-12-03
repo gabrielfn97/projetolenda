@@ -19,7 +19,7 @@
         <asp:Button ID="btnInserir" runat="server" OnClick="btnInserir_Click" Text="Inserir" />
         <asp:Button ID="btnDeletar" runat="server" Text="Deletar" />
         <asp:Button ID="btnConsutar" runat="server" Text="Consutar" />
-        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" />
+        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
     
     </div>
         <asp:GridView ID="gdvCadEstado" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="188px" PageSize="5" Width="232px">
