@@ -16,7 +16,7 @@ namespace Persistencia
 
         public void inserir( String estado, String sigla)
         {
-            String SQL = "INSERT INTO dbo.CadEstado( estado, sigla) VALUES(''" + estado + "','" + sigla + "')";
+            String SQL = "INSERT INTO dbo.CadEstado( estado, sigla) VALUES('" + estado + "','" + sigla + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
