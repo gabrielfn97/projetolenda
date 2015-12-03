@@ -18,13 +18,13 @@ namespace Negocio
             objCategoria.inserir(descricao, idClassificacao);
         }
 
-        public void alterar(String descricao, String idClassificacao)
+        public void alterar(String descricao, int idClassificacao)
         {
             pCategoria objCategoria = new pCategoria();
             objCategoria.alterar(descricao, idClassificacao);
         }
 
-        public void apagar(String descricao, String idClassificacao)
+        public void apagar(String descricao, int idClassificacao)
         {
             pCategoria objCategoria = new pCategoria();
             objCategoria.apagar(descricao, idClassificacao);
