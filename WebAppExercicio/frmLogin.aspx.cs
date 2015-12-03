@@ -20,5 +20,12 @@ namespace WebAppExercicio
             Login objLogin = new Login();
             objLogin.inserir(txtLogin.Text, txtSenha.Text);
         }
+
+        protected void btnAlterar_Click(object sender, EventArgs e)
+        {
+            Login objLogin = new Login();
+            objLogin.alterar(txtLogin.Text, txtSenha.Text);
+            Response.Redirect(Request.RawUrl);
+        }
     }
 }

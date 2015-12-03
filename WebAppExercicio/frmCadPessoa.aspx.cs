@@ -20,5 +20,15 @@ namespace WebAppExercicio
             Pessoas oPessoa = new Pessoas();
             oPessoa.inserir(txtCPF.Text, txtNome.Text, txtDataNascimento.Text);
         }
+
+        protected void btnAlterar_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

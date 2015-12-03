@@ -20,7 +20,7 @@
         <asp:TextBox ID="txtDataNascimento" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="btnInserir" runat="server" OnClick="btnInserir_Click" Text="Inserir" />
-        <asp:Button ID="Button2" runat="server" Text="Button" />
+        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="Button2_Click" />
         <asp:Button ID="Button3" runat="server" Text="Button" />
         <asp:Button ID="Button4" runat="server" Text="Button" />
     

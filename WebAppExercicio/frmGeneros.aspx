@@ -15,6 +15,8 @@
         <br />
         <asp:Button ID="btnInserir" runat="server" OnClick="btnInserir_Click" Text="Inserir" />
     
+        <asp:Button ID="btnAlterar" runat="server" OnClick="btnAlterar_Click" Text="Alterar" />
+    
     </div>
     </form>
 </body>

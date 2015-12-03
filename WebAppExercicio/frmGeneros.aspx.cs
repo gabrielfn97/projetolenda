@@ -20,5 +20,12 @@ namespace WebAppExercicio
             Genero oGenero = new Genero();
             oGenero.inserir(txtGeneros.Text);
         }
+
+        protected void btnAlterar_Click(object sender, EventArgs e)
+        {
+            Genero oGenero = new Genero();
+            oGenero.alterar(txtGeneros.Text);
+            Response.Redirect(Request.RawUrl);
+        }
     }
 }
