@@ -15,29 +15,22 @@ namespace Negocio
         String idFilme;
         String qtdEstrela;
 
-        public void inserir(String idLogin, String idFilme, String qtdEstrela)
+        public void inserir()
         {
-            pVotacaoFilme objVotacaoFilme = new pVotacaoFilme();
-            objVotacaoFilme.inserir(idLogin, idFilme, qtdEstrela);
+           
         }
 
-        public void alterar(String idLogin, String idFilme, String qtdEstrela)
+        public void alterar()
         {
-            pVotacaoFilme objVotacaoFilme = new pVotacaoFilme();
-            objVotacaoFilme.alterar(idLogin, idFilme, qtdEstrela);
+            
         }
 
-        public void apagar(String idLogin, String idFilme, String qtdEstrela)
+        public void apagar()
         {
-            pVotacaoFilme objVotacaoFilme = new pVotacaoFilme();
-            objVotacaoFilme.apagar(idLogin, idFilme, qtdEstrela);
+            
         }
 
-        public Object consultarTodos()
-        {
-            pVotacaoFilme objVotacaoFilme = new pVotacaoFilme();
-            return objVotacaoFilme.consultarTodos();
-        }
+        
 
     }
 }
