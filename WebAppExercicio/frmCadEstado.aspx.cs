@@ -57,5 +57,7 @@ namespace WebAppExercicio
             txtEstado.Text = Server.HtmlDecode(row.Cells[2].Text);
             txtSigla.Text = Server.HtmlDecode(row.Cells[3].Text);
         }
+
+      
     }
 }
