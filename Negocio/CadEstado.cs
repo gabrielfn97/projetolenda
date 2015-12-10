@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -31,15 +32,11 @@ namespace Negocio
             objCadEstado.apagar(estado, sigla);
         }
 
-        public Object consultarTodos()
+        public DataSet consultarTodos()
         {
             pCadEstado objCadEstado = new pCadEstado();
             return objCadEstado.consultarTodos();
         }
-
-       
-
-       
 
     }
 }
