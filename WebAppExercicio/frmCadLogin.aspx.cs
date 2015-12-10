@@ -32,13 +32,13 @@ namespace WebAppExercicio
         protected void btnInserir_Click(object sender, EventArgs e)
         {
             Usuarios objCadLogin = new Usuarios();
-            objCadLogin.inserir(txtEmail.Text, txtSenha.Text, txtUsuario.Text);
+            objCadLogin.inserir(txtEmail.Text, txtUsuario.Text, txtSenha.Text);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
             Usuarios objCadLogin = new Usuarios();
-            objCadLogin.alterar(txtEmail.Text, txtSenha.Text, txtUsuario.Text, txtidCadLogin.Text);
+            objCadLogin.alterar(txtEmail.Text, txtUsuario.Text, txtSenha.Text, txtidCadLogin.Text);
             Response.Redirect(Request.RawUrl);
         }
 
@@ -46,7 +46,7 @@ namespace WebAppExercicio
         {
 
             Usuarios objCadLogin = new Usuarios();
-            objCadLogin.apagar(txtEmail.Text, txtSenha.Text, txtUsuario.Text, txtidCadLogin.Text);
+            objCadLogin.apagar(txtEmail.Text, txtUsuario.Text, txtSenha.Text, txtidCadLogin.Text);
             Response.Redirect(Request.RawUrl);
         }
 
@@ -55,8 +55,8 @@ namespace WebAppExercicio
             GridViewRow row = gdvCadLogin.SelectedRow;
             txtidCadLogin.Text = Server.HtmlDecode(row.Cells[1].Text);
             txtEmail.Text = Server.HtmlDecode(row.Cells[2].Text);
-            txtSenha.Text = Server.HtmlDecode(row.Cells[3].Text);
-            txtUsuario.Text = Server.HtmlDecode(row.Cells[4].Text);
+            txtUsuario.Text = Server.HtmlDecode(row.Cells[3].Text);
+            txtSenha.Text = Server.HtmlDecode(row.Cells[4].Text);
         }
     }
 }

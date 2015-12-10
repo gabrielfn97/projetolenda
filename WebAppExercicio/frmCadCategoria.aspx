@@ -26,7 +26,7 @@
         <asp:Button ID="btnApagar" runat="server" Text="Apagar" OnClick="btnApagar_Click1" />
     
     </div>
-        <asp:GridView ID="gdvCadCategoria" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="42px" PageSize="5" Width="18px" OnSelectedIndexChanged="gdvCadCategoria_SelectedIndexChanged1">
+        <asp:GridView ID="gdvCadCategoria" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="42px" Width="18px" OnSelectedIndexChanged="gdvCadCategoria_SelectedIndexChanged1">
             <AlternatingRowStyle BackColor="#F7F7F7" />
             <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
             <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />

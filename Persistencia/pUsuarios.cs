@@ -27,8 +27,8 @@ namespace Persistencia
         public void alterar(String email, String usuario, String senha,String idCadLogin)
         {
             String SQL = "UPDATE dbo.CadLogin";
-            SQL += "'SET email = '" + email + "', usuario = '" + usuario + "', senha = '" + senha + "'";
-            SQL += "WHERE idCadLogin = " + idCadLogin;
+            SQL += " SET email = '" + email + "', usuario = '" + usuario + "', senha = '" + senha + "'";
+            SQL += " WHERE idCadLogin = " + idCadLogin;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
