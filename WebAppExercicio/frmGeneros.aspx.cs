@@ -34,5 +34,12 @@ namespace WebAppExercicio
             objGenero.apagar(txtGeneros.Text);
             Response.Redirect(Request.RawUrl);
         }
+
+        protected void gdvGeneros_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GridViewRow row = gdvGeneros.SelectedRow;
+            txtGeneros.Text = Server.HtmlDecode(row.Cells[1].Text);
+
+        }
     }
 }
