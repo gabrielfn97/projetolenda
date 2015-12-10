@@ -10,6 +10,10 @@
     <form id="form1" runat="server">
     <div>
     
+        <asp:Label ID="Label4" runat="server" Text="idCadLogin" Visible="False"></asp:Label>
+        <asp:TextBox ID="txtidCadLogin" runat="server" Visible="False"></asp:TextBox>
+        <br />
+    
         <asp:Label ID="Label1" runat="server" Text="Email:"></asp:Label>
         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
         <br />
@@ -22,12 +26,11 @@
         <asp:Button ID="btnInserir" runat="server" Text="Inserir" OnClick="btnInserir_Click" />
         <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
         <asp:Button ID="btnApagar" runat="server" Text="Apagar" OnClick="btnApagar_Click" />
-        <asp:Button ID="Button4" runat="server" Text="Button" />
     
         <br />
     
     </div>
-        <asp:GridView ID="gdvCadLogin" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="48px" PageSize="5" Width="16px">
+        <asp:GridView ID="gdvCadLogin" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="16px" PageSize="5" Width="16px">
             <AlternatingRowStyle BackColor="#F7F7F7" />
             <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
             <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />

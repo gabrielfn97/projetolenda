@@ -24,7 +24,7 @@ namespace WebAppExercicio
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
             Usuarios objCadLogin = new Usuarios();
-            objCadLogin.alterar(txtEmail.Text, txtSenha.Text, txtUsuario.Text);
+            objCadLogin.alterar(txtEmail.Text, txtSenha.Text, txtUsuario.Text, txtidCadLogin.Text);
             Response.Redirect(Request.RawUrl);
         }
 
@@ -32,7 +32,7 @@ namespace WebAppExercicio
         {
 
             Usuarios objCadLogin = new Usuarios();
-            objCadLogin.apagar(txtEmail.Text, txtSenha.Text, txtUsuario.Text);
+            objCadLogin.apagar(txtEmail.Text, txtSenha.Text, txtUsuario.Text, txtidCadLogin.Text);
             Response.Redirect(Request.RawUrl);
         }
     }

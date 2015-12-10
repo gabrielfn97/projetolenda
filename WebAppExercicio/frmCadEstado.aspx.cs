@@ -38,7 +38,7 @@ namespace WebAppExercicio
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
             CadEstado objCadEstado = new CadEstado();
-            objCadEstado.alterar(txtEstado.Text, txtSigla.Text);
+            objCadEstado.alterar(txtEstado.Text, txtSigla.Text, txtidCadEstado.Text);
             Response.Redirect(Request.RawUrl);
         }
 

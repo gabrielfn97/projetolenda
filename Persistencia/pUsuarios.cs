@@ -24,7 +24,7 @@ namespace Persistencia
         }
 
 
-        public void alterar(String email, String usuario, String senha)
+        public void alterar(String email, String usuario, String senha,String idCadLogin)
         {
             String SQL = "UPDATE dbo.CadLogin";
             SQL += "'SET email = '" + email + "', usuario = '" + usuario + "', senha = '" + senha + "'";
@@ -35,7 +35,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void apagar(String email, String usuario, String senha)
+        public void apagar(String email, String usuario, String senha,String idCadLogin)
         {
             String SQL = "DELETE dbo.CadLogin WHERE idCadLogin =" + idCadLogin;
 

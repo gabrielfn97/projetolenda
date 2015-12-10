@@ -19,16 +19,16 @@ namespace Negocio
             objCadLogin.inserir(email, usuario, senha);
         }
 
-        public void alterar(String email, String usuario, String senha)
+        public void alterar(String email, String usuario, String senha, String idCadLogin)
         {
             pUsuarios objCadLogin = new pUsuarios();
-            objCadLogin.alterar(email, usuario, senha);
+            objCadLogin.alterar(email, usuario, senha, idCadLogin);
         }
 
-        public void apagar(String email, String usuario, String senha)
+        public void apagar(String email, String usuario, String senha, String idCadLogin)
         {
             pUsuarios objCadLogin = new pUsuarios();
-            objCadLogin.apagar(email, usuario, senha);
+            objCadLogin.apagar(email, usuario, senha, idCadLogin);
         }
 
         public Object consultarTodos()

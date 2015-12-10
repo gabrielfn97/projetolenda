@@ -38,7 +38,7 @@ namespace WebAppExercicio
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
             Genero objGenero = new Genero();
-            objGenero.alterar(txtGeneros.Text);
+            objGenero.alterar(txtGeneros.Text, txtidGeneros.Text);
             Response.Redirect(Request.RawUrl);
         }
 
