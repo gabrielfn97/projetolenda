@@ -33,7 +33,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void apagar(String generos)
+        public void apagar(String idGeneros, String generos)
         {
             String SQL = "DELETE dbo.Generos WHERE idGeneros =" + idGeneros;
 

@@ -24,10 +24,10 @@ namespace Negocio
             objGenero.alterar(generos);
         }
 
-        public void apagar(String generos)
+        public void apagar(String idGeneros, String generos)
         {
             pGenero objGenero = new pGenero();
-            objGenero.apagar(generos);
+            objGenero.apagar(idGeneros, generos);
         }
 
         public DataSet consultarTodos()

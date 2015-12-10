@@ -10,6 +10,10 @@
     <form id="form1" runat="server">
     <div>
     
+        &nbsp;<asp:Label ID="Label2" runat="server" Text="idGeneros" Visible="False"></asp:Label>
+        <asp:TextBox ID="txtidGeneros" runat="server" Visible="False"></asp:TextBox>
+        <br />
+    
         <asp:Label ID="Label1" runat="server" Text="Generos:"></asp:Label>
         <asp:TextBox ID="txtGeneros" runat="server"></asp:TextBox>
         <br />
@@ -22,7 +26,7 @@
         <br />
     
     </div>
-        <asp:GridView ID="gdvGeneros" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="215px" PageSize="5" Width="210px" OnSelectedIndexChanged="gdvGeneros_SelectedIndexChanged">
+        <asp:GridView ID="gdvGeneros" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="50px" PageSize="5" Width="16px" OnSelectedIndexChanged="gdvGeneros_SelectedIndexChanged">
             <AlternatingRowStyle BackColor="#F7F7F7" />
             <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
             <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
