@@ -23,11 +23,11 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void alterar(String descricao, int idClassificacao)
+        public void alterar(String descricao, int idClassificacao, String idCategoria)
         {
             String SQL = "UPDATE dbo.Categoria";
-            SQL += "'SET descricao = '" + descricao + "', idClassificacao = '" + Convert.ToInt32(idClassificacao) + "'";
-            SQL += "WHERE  idCategoria =  " + idCategoria;
+            SQL += " SET descricao = '" + descricao + "', idClassificacao = " + Convert.ToInt32(idClassificacao);
+            SQL += " WHERE  idCategoria =  " + idCategoria;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);

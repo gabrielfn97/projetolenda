@@ -20,10 +20,10 @@ namespace Negocio
             objCategoria.inserir(descricao, idClassificacao);
         }
 
-        public void alterar(String descricao, int idClassificacao)
+        public void alterar(String descricao, int idClassificacao, String idCategoria)
         {
             pCategoria objCategoria = new pCategoria();
-            objCategoria.alterar(descricao, idClassificacao);
+            objCategoria.alterar(descricao, idClassificacao, idCategoria);
         }
 
         public void apagar(String idCategoria, String descricao, int idClassificacao)
