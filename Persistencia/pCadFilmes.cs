@@ -29,11 +29,11 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void alterar(String NomeFilmes, String Classificacao, String Genero, String Iframe, String UrlImg, String Nota, String DataLacamento, String AtoresPrincipais, String Nacionalidade)
+        public void alterar(String NomeFilmes, String Classificacao, String Genero, String Iframe, String UrlImg, String Nota, String DataLacamento, String AtoresPrincipais, String Nacionalidade, String idFilmes)
         {
             String SQL = "UPDATE dbo.CadFilmes";
-            SQL += "'SET NomeFilmes = '" + NomeFilmes + "',  Classificacao = '" +  Classificacao + "', Genero = '" + Genero + "', Iframe = '" + Iframe +"', UrlImg = '" + UrlImg +"', Nota = '" +Nota+"', DataLancamento = '" + DataLacamento+ "', AtoresPrincipais = '" + AtoresPrincipais+"', Nacionalidade = '" + Nacionalidade +"'";
-            SQL += "WHERE idFilmes = " + idFilmes;
+            SQL += " SET NomeFilmes = '" + NomeFilmes + "',  Classificacao = '" +  Classificacao + "', Genero = '" + Genero + "', Iframe = '" + Iframe +"', UrlImg = '" + UrlImg +"', Nota = '" +Nota+"', DataLacamento = '" + DataLacamento+ "', AtoresPrincipais = '" + AtoresPrincipais+"', Nacionalidade = '" + Nacionalidade +"'";
+            SQL += " WHERE idFilmes = " + idFilmes;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);

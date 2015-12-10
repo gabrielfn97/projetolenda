@@ -39,7 +39,7 @@ namespace WebAppExercicio
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
             CadFilmes objCadFilmes = new CadFilmes();
-            objCadFilmes.alterar(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
+            objCadFilmes.alterar(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text, txtidFilmes.Text);
             Response.Redirect(Request.RawUrl);
         }
 
