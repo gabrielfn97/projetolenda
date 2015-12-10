@@ -23,11 +23,11 @@ namespace Persistencia
         }
 
 
-        public void alterar(String estado, String sigla)
+        public void alterar(String estado, String sigla, String idCadEstado)
         {
             String SQL = "UPDATE dbo.CadEstado";
-            SQL += "'SET estado = '" + estado + "', sigla = '" + sigla + "'";
-            SQL += "WHERE idCadEstado = " + idCadEstado;
+            SQL += " SET estado = '" + estado + "', sigla = '" + sigla + "'";
+            SQL += " WHERE idCadEstado = " + idCadEstado;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);

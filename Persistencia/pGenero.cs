@@ -22,11 +22,11 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void alterar(String generos)
+        public void alterar(String generos, String idGeneros)
         {
             String SQL = "UPDATE dbo.Generos";
-            SQL += "'SET generos = '" + generos + "'";
-            SQL += "WHERE1 idGeneros = " + idGeneros;
+            SQL += " SET generos = '" + generos + "'";
+            SQL += " WHERE idGeneros = " + idGeneros;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
