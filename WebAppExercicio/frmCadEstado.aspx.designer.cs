@@ -67,7 +67,7 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.Button btnInserir;
         
         /// <summary>
-        /// btnDeletar control.
+        /// Controle btnApagar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
@@ -94,11 +94,11 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.Button btnAlterar;
         
         /// <summary>
-        /// gdvCadEstado control.
+        /// Controle gdvCadEstado.
         /// </summary>
         /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gdvCadEstado;
     }

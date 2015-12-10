@@ -17,13 +17,13 @@ namespace WebAppExercicio
 
         protected void btnInserir_Click(object sender, EventArgs e)
         {
-            CadLogin objCadLogin = new CadLogin();
+            Usuarios objCadLogin = new Usuarios();
             objCadLogin.inserir(txtEmail.Text, txtSenha.Text, txtUsuario.Text);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
-            CadLogin objCadLogin = new CadLogin();
+            Usuarios objCadLogin = new Usuarios();
             objCadLogin.alterar(txtEmail.Text, txtSenha.Text, txtUsuario.Text);
             Response.Redirect(Request.RawUrl);
         }
@@ -31,7 +31,7 @@ namespace WebAppExercicio
         protected void btnApagar_Click(object sender, EventArgs e)
         {
 
-            CadLogin objCadLogin = new CadLogin();
+            Usuarios objCadLogin = new Usuarios();
             objCadLogin.apagar(txtEmail.Text, txtSenha.Text, txtUsuario.Text);
             Response.Redirect(Request.RawUrl);
         }

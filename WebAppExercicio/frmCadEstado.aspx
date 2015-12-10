@@ -22,7 +22,7 @@
         <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
     
     </div>
-        <asp:GridView ID="gdvCadEstado" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="188px" PageSize="5" Width="232px">
+        <asp:GridView ID="gdvCadEstado" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="188px" PageSize="5" Width="232px" OnSelectedIndexChanged="gdvCadEstado_SelectedIndexChanged">
             <AlternatingRowStyle BackColor="#F7F7F7" />
             <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
             <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />

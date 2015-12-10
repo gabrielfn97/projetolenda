@@ -15,11 +15,11 @@
         <br />
         <asp:Button ID="btnInserir" runat="server" OnClick="btnInserir_Click" Text="Inserir" />
     
-        <br />
-    
         <asp:Button ID="btnAlterar" runat="server" OnClick="btnAlterar_Click" Text="Alterar" />
     
         <asp:Button ID="btnApagar" runat="server" OnClick="btnApagar_Click" Text="Apagar" />
+    
+        <br />
     
     </div>
         <asp:GridView ID="gdvGeneros" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="215px" PageSize="5" Width="210px">

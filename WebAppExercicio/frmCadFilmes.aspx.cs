@@ -34,6 +34,5 @@ namespace WebAppExercicio
             objCadFilmes.apagar(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
             Response.Redirect(Request.RawUrl);
         }
-
     }
 }

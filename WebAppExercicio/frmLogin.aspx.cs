@@ -15,24 +15,9 @@ namespace WebAppExercicio
 
         }
 
-        protected void btnInserir_Click(object sender, EventArgs e)
+        protected void btnInserir_Click1(object sender, EventArgs e)
         {
-            Login objLogin = new Login();
-            objLogin.inserir(txtLogin.Text, txtSenha.Text);
-        }
 
-        protected void btnAlterar_Click(object sender, EventArgs e)
-        {
-            Login objLogin = new Login();
-            objLogin.alterar(txtLogin.Text, txtSenha.Text);
-            Response.Redirect(Request.RawUrl);
-        }
-
-        protected void btnApagar_Click(object sender, EventArgs e)
-        {
-            Login objLogin = new Login();
-            objLogin.apagar(txtLogin.Text, txtSenha.Text);
-            Response.Redirect(Request.RawUrl);
         }
     }
 }
