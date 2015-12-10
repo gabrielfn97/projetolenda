@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -31,7 +32,7 @@ namespace Negocio
             objCadLogin.apagar(email, usuario, senha, idCadLogin);
         }
 
-        public Object consultarTodos()
+        public DataSet consultarTodos()
         {
             pUsuarios objCadLogin = new pUsuarios();
             return objCadLogin.consultarTodos();
