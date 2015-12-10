@@ -43,7 +43,7 @@ namespace WebAppExercicio
             Response.Redirect(Request.RawUrl);
         }
 
-        protected void btnApagar_Click(object sender, EventArgs e)
+        protected void btnApagar_Click1(object sender, EventArgs e)
         {
             CadFilmes objCadFilmes = new CadFilmes();
             objCadFilmes.apagar(txtidFilmes.Text,txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
@@ -64,8 +64,6 @@ namespace WebAppExercicio
             txtDataLacamento.Text = Server.HtmlDecode(row.Cells[8].Text);
             txtAtoresPrincipais.Text = Server.HtmlDecode(row.Cells[9].Text);
             txtNacionalidade.Text = Server.HtmlDecode(row.Cells[10].Text);
-
-
         }
     }
 }

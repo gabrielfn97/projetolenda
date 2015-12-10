@@ -148,24 +148,6 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.Button btnApagar;
         
         /// <summary>
-        /// Controle btnConsultar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnConsultar;
-        
-        /// <summary>
-        /// Controle btnCartaz.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCartaz;
-        
-        /// <summary>
         /// Controle gdvCadFilmes.
         /// </summary>
         /// <remarks>
