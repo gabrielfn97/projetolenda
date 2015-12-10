@@ -18,10 +18,10 @@ namespace Negocio
             objGenero.inserir(generos);
         }
 
-        public void alterar(String generos)
+        public void alterar(String generos,String idGeneros)
         {
             pGenero objGenero = new pGenero();
-            objGenero.alterar(generos);
+            objGenero.alterar(generos,idGeneros);
         }
 
         public void apagar(String idGeneros, String generos)

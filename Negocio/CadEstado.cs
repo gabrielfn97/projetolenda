@@ -20,10 +20,10 @@ namespace Negocio
             objCadEstado.inserir(estado,sigla);
         }
 
-        public void alterar(String estado, String sigla)
+        public void alterar(String estado, String sigla,String idCadEstado)
         {
             pCadEstado objCadEstado = new pCadEstado();
-            objCadEstado.alterar(estado, sigla);
+            objCadEstado.alterar(estado, sigla, idCadEstado);
         }
 
         public void apagar(String idCadEstado,String estado, String sigla)
