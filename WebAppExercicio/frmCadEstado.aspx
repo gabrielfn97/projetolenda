@@ -10,6 +10,10 @@
     <form id="form1" runat="server">
     <div style="height: 98px">
     
+        <asp:Label ID="Label3" runat="server" Text="IdCadEstado" Visible="False"></asp:Label>
+        <asp:TextBox ID="txtidCadEstado" runat="server" Visible="False" Width="26px"></asp:TextBox>
+        <br />
+    
         <asp:Label ID="Label1" runat="server" Text="Estado:"></asp:Label>
         <asp:TextBox ID="txtEstado" runat="server"></asp:TextBox>
         <br />

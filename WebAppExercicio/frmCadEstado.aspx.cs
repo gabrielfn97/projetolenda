@@ -45,15 +45,17 @@ namespace WebAppExercicio
         protected void btnApagar_Click(object sender, EventArgs e)
         {
             CadEstado objCadEstado = new CadEstado();
-            objCadEstado.apagar(txtEstado.Text, txtSigla.Text);
+            objCadEstado.apagar(txtidCadEstado.Text,txtEstado.Text,txtSigla.Text);
             Response.Redirect(Request.RawUrl);
         }
 
         protected void gdvCadEstado_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow row = gdvCadEstado.SelectedRow;
-            txtEstado.Text = Server.HtmlDecode(row.Cells[1].Text);
-            txtSigla.Text = Server.HtmlDecode(row.Cells[2].Text);
+
+            txtidCadEstado.Text = Server.HtmlDecode(row.Cells[1].Text);
+            txtEstado.Text = Server.HtmlDecode(row.Cells[2].Text);
+            txtSigla.Text = Server.HtmlDecode(row.Cells[3].Text);
         }
     }
 }

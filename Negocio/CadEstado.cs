@@ -26,10 +26,10 @@ namespace Negocio
             objCadEstado.alterar(estado, sigla);
         }
 
-        public void apagar(String estado, String sigla)
+        public void apagar(String idCadEstado,String estado, String sigla)
         {
             pCadEstado objCadEstado = new pCadEstado();
-            objCadEstado.apagar(estado, sigla);
+            objCadEstado.apagar(idCadEstado, estado, sigla);
         }
 
         public DataSet consultarTodos()
