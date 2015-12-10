@@ -35,9 +35,9 @@ namespace Persistencia
 
         }
 
-        public void apagar(String estado, String sigla)
+        public void apagar(String idCadEstado, String estado, String sigla)
         {
-            String SQL = "DELETE dbo.CadEstado WHERE idCadEstado = '" + idCadEstado;
+            String SQL = "DELETE dbo.CadEstado WHERE idCadEstado = " + idCadEstado;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
