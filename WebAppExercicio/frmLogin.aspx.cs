@@ -17,7 +17,8 @@ namespace WebAppExercicio
 
         protected void btnInserir_Click1(object sender, EventArgs e)
         {
-
+            Usuarios objLogar = new Usuarios();
+            objLogar.logar(txtLogin.Text, txtSenha.Text);
         }
     }
 }
