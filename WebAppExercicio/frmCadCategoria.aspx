@@ -8,8 +8,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:Label ID="Label3" runat="server" Text="idCategoria: " Visible="False"></asp:Label>
+        <asp:TextBox ID="txtidCategoria" runat="server" Visible="False"></asp:TextBox>
+        <br />
         <asp:Label ID="Label1" runat="server" Text="Classificação de Idade:"></asp:Label>
-        <asp:TextBox ID="txtdescricao" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtdescricao" runat="server" OnTextChanged="txtdescricao_TextChanged"></asp:TextBox>
     <div>
     
         <asp:Label ID="Label2" runat="server" Text="Numero do Filme"></asp:Label>

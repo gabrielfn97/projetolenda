@@ -10,6 +10,7 @@ namespace Negocio
 {
     public class Categoria
     {
+        String idCategoria;
         String descricao;
         int idClassificacao;
 
@@ -25,10 +26,10 @@ namespace Negocio
             objCategoria.alterar(descricao, idClassificacao);
         }
 
-        public void apagar(String descricao, int idClassificacao)
+        public void apagar(String idCategoria, String descricao, int idClassificacao)
         {
             pCategoria objCategoria = new pCategoria();
-            objCategoria.apagar(descricao, idClassificacao);
+            objCategoria.apagar(idCategoria, descricao, idClassificacao);
         }
 
         public DataSet consultarTodos()

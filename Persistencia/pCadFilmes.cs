@@ -42,7 +42,7 @@ namespace Persistencia
 
        
 
-        public void apagar(String NomeFilmes, String Classificacao, String Genero, String Iframe, String UrlImg, String Nota, String DataLacamento, String AtoresPrincipais, String Nacionalidade)
+        public void apagar(String idFilmes,String NomeFilmes, String Classificacao, String Genero, String Iframe, String UrlImg, String Nota, String DataLacamento, String AtoresPrincipais, String Nacionalidade)
         {
             String SQL = "DELETE dbo.CadFilmes WHERE idFilmes =" + idFilmes;
 
@@ -51,7 +51,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public Object consultarTodos()
+        public DataSet consultarTodos()
         {
             String SQL = "SELECT * FROM dbo.CadFilmes";
 

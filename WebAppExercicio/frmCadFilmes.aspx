@@ -11,6 +11,10 @@
     <form id="form1" runat="server">
     <div>
     
+        <asp:Label ID="Label1" runat="server" Text="idFilmes: " Visible="False"></asp:Label>
+        <asp:TextBox ID="txtidFilmes" runat="server" Visible="False"></asp:TextBox>
+        <br />
+    
         Nome do Filme:
         <asp:TextBox ID="txtNomeFilme" runat="server"></asp:TextBox>
         <br />

@@ -34,7 +34,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void apagar(String descricao, int idClassificacao)
+        public void apagar(String idCategoria, String descricao, int idClassificacao)
         {
             String SQL = "DELETE dbo.Categoria WHERE idCategoria =" + idCategoria;
 

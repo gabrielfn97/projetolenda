@@ -33,8 +33,9 @@ namespace WebAppExercicio
         protected void gdvCadCategoria_SelectedIndexChanged1(object sender, EventArgs e)
         {
             GridViewRow row = gdvCadCategoria.SelectedRow;
-            txtdescricao.Text = Server.HtmlDecode(row.Cells[1].Text);
-            txtNdoFilme.Text = Server.HtmlDecode(row.Cells[2].Text);
+            txtidCategoria.Text = Server.HtmlDecode(row.Cells[1].Text);
+            txtdescricao.Text = Server.HtmlDecode(row.Cells[2].Text);
+            txtNdoFilme.Text = Server.HtmlDecode(row.Cells[3].Text);
         }
 
         protected void btnInserir_Click1(object sender, EventArgs e)
@@ -53,7 +54,7 @@ namespace WebAppExercicio
         protected void btnApagar_Click1(object sender, EventArgs e)
         {
             Categoria objCategoria = new Categoria();
-            objCategoria.apagar(txtdescricao.Text, Convert.ToInt32(txtNdoFilme.Text));
+            objCategoria.apagar(txtidCategoria.Text, txtdescricao.Text, Convert.ToInt32(txtNdoFilme.Text));
             Response.Redirect(Request.RawUrl);
         }
 
