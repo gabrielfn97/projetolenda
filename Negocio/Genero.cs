@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Persistencia;
+using System.Data;
 
 namespace Negocio
 {
@@ -23,13 +24,13 @@ namespace Negocio
             objGenero.alterar(generos);
         }
 
-        public void apagar(String generos)
+        public void apagar(String idGeneros, String generos)
         {
             pGenero objGenero = new pGenero();
-            objGenero.apagar(generos);
+            objGenero.apagar(idGeneros, generos);
         }
 
-        public Object consultarTodos()
+        public DataSet consultarTodos()
         {
             pGenero objGenero = new pGenero();
             return objGenero.consultarTodos();

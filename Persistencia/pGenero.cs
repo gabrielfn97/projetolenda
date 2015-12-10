@@ -33,7 +33,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void apagar(String generos)
+        public void apagar(String idGeneros, String generos)
         {
             String SQL = "DELETE dbo.Generos WHERE idGeneros =" + idGeneros;
 
@@ -42,7 +42,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public Object consultarTodos()
+        public DataSet consultarTodos()
         {
             String SQL = "SELECT * FROM dbo.Generos";
 
