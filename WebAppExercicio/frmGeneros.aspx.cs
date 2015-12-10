@@ -45,14 +45,15 @@ namespace WebAppExercicio
         protected void btnApagar_Click(object sender, EventArgs e)
         {
             Genero objGenero = new Genero();
-            objGenero.apagar(txtGeneros.Text);
+            objGenero.apagar(txtidGeneros.Text, txtGeneros.Text);
             Response.Redirect(Request.RawUrl);
         }
 
         protected void gdvGeneros_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow row = gdvGeneros.SelectedRow;
-            txtGeneros.Text = Server.HtmlDecode(row.Cells[1].Text);
+            txtidGeneros.Text = Server.HtmlDecode(row.Cells[1].Text);
+            txtGeneros.Text = Server.HtmlDecode(row.Cells[2].Text);
         }
     }
 }
