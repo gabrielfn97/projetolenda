@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Persistencia
 {
-    public class pCadLogin
+    public class pUsuarios
     {
         String idCadLogin;
         String email;
@@ -59,10 +59,9 @@ namespace Persistencia
             return ds;
         }
 
-        public Object logar()
+        public DataSet logar(String usuario, String senha)
         {
-            String SQL = "SELECT * FROM dbo.CadLogin WHERE usuario = '" + usuario + "', senha = '" + senha + "'";
-
+            String SQL = "SELECT * FROM dbo.CadLogin WHERE usuario = '" + usuario + "'  AND senha= '" + senha + "'";
             Conexao oConexao = new Conexao("SQLServer");
 
             SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
