@@ -41,11 +41,10 @@
   <ItemGroup>
     <Compile Include="pCadEstado.cs" />
     <Compile Include="pCadFilmes.cs" />
-    <Compile Include="pCadLogin.cs" />
+    <Compile Include="pUsuarios.cs" />
     <Compile Include="Conexao.cs" />
     <Compile Include="pGenero.cs" />
     <Compile Include="pCategoria.cs" />
-    <Compile Include="pLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pVotacaoFilme.cs" />
   </ItemGroup>
