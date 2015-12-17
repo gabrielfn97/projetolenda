@@ -10,10 +10,10 @@ namespace Persistencia
 {
     public class pUsuarios
     {
-        String idCadLogin;
-        String email;
-        String usuario;
-        String senha;
+        public String idCadLogin { get; set; }
+        private String email;
+        private String usuario;
+        private String senha;
 
         public void inserir(String email, String usuario, String senha)
         {
@@ -59,18 +59,20 @@ namespace Persistencia
             return ds;
         }
 
-        public DataSet logar(String usuario, String senha)
+        public void logar(String usuario, String senha)
         {
             String SQL = "SELECT * FROM dbo.CadLogin WHERE usuario = '" + usuario + "'  AND senha= '" + senha + "'";
             Conexao oConexao = new Conexao("SQLServer");
 
-            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
-            DataSet ds = new DataSet("Tabela");
-            adapter.Fill(ds, "Tabela");
+            SqlDataReader dr = oConexao.executeReader(SQL);
 
-            oConexao.fechaConexao();
+            while (dr.Read())
+            {
+                this.idCadLogin = Convert.ToString(dr["idCadLogin"]);
+            }
+            dr.Close();
 
-            return ds;
+            oConexao.fechaConexao();           
         }
 
     }

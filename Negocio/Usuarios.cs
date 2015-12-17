@@ -10,9 +10,10 @@ namespace Negocio
 {
     public class Usuarios
     {
-        String email;
-        String usuario;
-        String senha;
+        private String email;
+        private String usuario;
+        private String senha;
+        public String idUsuario { get; set; }
 
         public void inserir(String email, String usuario, String senha)
         {
@@ -38,11 +39,11 @@ namespace Negocio
             return objCadLogin.consultarTodos();
         }
 
-        public String logar(String usuario, String senha)
+        public void logar(String usuario, String senha)
         {
             pUsuarios objCadLogin = new pUsuarios();
             objCadLogin.logar(usuario, senha);
-            return "";
+            this.idUsuario = objCadLogin.idCadLogin;
         }
     }
 }

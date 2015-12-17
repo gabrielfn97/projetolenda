@@ -14,7 +14,7 @@
         <asp:TextBox ID="txtLogin" runat="server"></asp:TextBox>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Senha:"></asp:Label>
-        <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
         <br />
         <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnInserir_Click1" />
     

@@ -19,6 +19,16 @@ namespace WebAppExercicio
         {
             Usuarios objLogar = new Usuarios();
             objLogar.logar(txtLogin.Text, txtSenha.Text);
+
+            if (objLogar.idUsuario != null)
+            {
+                Session["Usuario"] = objLogar.idUsuario;
+                Response.Redirect("index.aspx");
+            }
+            else
+            {
+                Response.Redirect(Request.RawUrl);
+            }
         }
     }
 }
