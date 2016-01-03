@@ -58,9 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="frmCadCategoria.aspx" />
+    <Content Include="frmCadCidade.aspx" />
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadFilmes.aspx" />
     <Content Include="frmCadLogin.aspx" />
+    <Content Include="frmCritica.aspx" />
     <Content Include="frmCadNoticia.aspx" />
     <Content Include="frmGeneros.aspx" />
     <Content Include="frmLogin.aspx" />
@@ -68,6 +70,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadCidade.aspx.cs">
+      <DependentUpon>frmCadCidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadCidade.aspx.designer.cs">
+      <DependentUpon>frmCadCidade.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadEstado.aspx.cs">
       <DependentUpon>frmCadEstado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,6 +104,13 @@
     </Compile>
     <Compile Include="frmCadCategoria.aspx.designer.cs">
       <DependentUpon>frmCadCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCritica.aspx.cs">
+      <DependentUpon>frmCritica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCritica.aspx.designer.cs">
+      <DependentUpon>frmCritica.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmCadNoticia.aspx.cs">
       <DependentUpon>frmCadNoticia.aspx</DependentUpon>
