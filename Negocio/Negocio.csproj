@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="CadEstado.cs" />
     <Compile Include="CadFilmes.cs" />
+    <Compile Include="CadNoticia.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="Genero.cs">
       <SubType>Code</SubType>
