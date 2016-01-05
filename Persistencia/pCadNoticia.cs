@@ -15,20 +15,21 @@ namespace Persistencia
         String idNoticia;
         String noticia;
         String data;
+        String TipoNoticia;
 
 
-        public void inserir(String noticia, String data)
+        public void inserir(String noticia, String data, String TipoNoticia)
         {
-            String SQL = "INSERT INTO dbo.noticia (noticia) VALUES('" + noticia + "','" + data + "')";
+            String SQL = "INSERT INTO dbo.noticia (noticia) VALUES('" + noticia + "','" + data + "' , '"+ TipoNoticia +"')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
 
-        public void alterar(String idNoticia, String noticia, String data)
+        public void alterar(String idNoticia, String noticia, String data, String TipoNoticia)
         {
             String SQL = "UPDATE dbo.noticia";
-            SQL += " SET noticia = '" + noticia + "', data = '" + data + "'";
+            SQL += " SET noticia = '" + noticia + "', data = '" + data + "' ,  '"+TipoNoticia+ "')";
             SQL += " WHERE idNoticia = " + idNoticia;
 
             Conexao oConexao = new Conexao("SQLServer");
@@ -36,7 +37,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void apagar(String idNoticia, String noticia, String data)
+        public void apagar(String idNoticia, String noticia, String data, String TipoNoticia)
         {
             String SQL = "DELETE dbo.noticia WHERE idNoticia =" + idNoticia;
 

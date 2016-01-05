@@ -19,6 +19,10 @@
         <asp:Label ID="Label3" runat="server" Text="Data: "></asp:Label>
         <asp:TextBox ID="txtData" runat="server"></asp:TextBox>
         <br />
+        <asp:Label ID="Label4" runat="server" Text="Tipo Notícia"></asp:Label>
+        :
+        <asp:TextBox ID="txtTipoNoticia" runat="server" OnTextChanged="txtTipoNoticia_TextChanged"></asp:TextBox>
+        <br />
         <asp:Button ID="btnInserir" runat="server" OnClick="Button1_Click" Text="Inserir" />
 &nbsp;<asp:Button ID="btnAlterar" runat="server" OnClick="btnAlterar_Click" Text="Alterar" />
 &nbsp;<asp:Button ID="btnApagar" runat="server" OnClick="Button3_Click" Text="Apagar" />

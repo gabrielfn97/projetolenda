@@ -13,23 +13,24 @@ namespace Negocio
         String noticia;
         String idNoticia;
         String data;
+        String TipoNoticia;
 
-        public void inserir(String noticia, String data)
+        public void inserir(String noticia, String data, String TipoNoticia)
         {
             pCadNoticia objnoticia = new pCadNoticia();
-            objnoticia.inserir(noticia, data);
+            objnoticia.inserir(noticia, data, TipoNoticia);
         }
 
-        public void alterar(String idNoticia, String noticia, String data)
+        public void alterar(String idNoticia, String noticia, String data, String TipoNoticia)
         {
             pCadNoticia objnoticia = new pCadNoticia();
-            objnoticia.alterar(idNoticia, noticia, data);
+            objnoticia.alterar(idNoticia, noticia, data, TipoNoticia);
         }
 
-        public void apagar(String idNoticia, String noticia, String data)
+        public void apagar(String idNoticia, String noticia, String data, String TipoNoticia)
         {
             pCadNoticia objnoticia = new pCadNoticia();
-            objnoticia.alterar(idNoticia, noticia, data);
+            objnoticia.alterar(idNoticia, noticia, data, TipoNoticia);
         }
 
         public DataSet consultarTodos()
@@ -40,3 +41,4 @@ namespace Negocio
 
     }
 }
+  

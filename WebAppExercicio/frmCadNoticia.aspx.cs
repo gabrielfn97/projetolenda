@@ -31,20 +31,20 @@ namespace WebAppExercicio
         protected void Button1_Click(object sender, EventArgs e)
         {
             CadNoticia objCadNoticia = new CadNoticia();
-            objCadNoticia.inserir(txtNoticia.Text, txtData.Text);
+            objCadNoticia.inserir(txtNoticia.Text, txtData.Text, txtTipoNoticia.Text);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
             CadNoticia objCadNoticia = new CadNoticia();
-            objCadNoticia.alterar(txtidNoticia.Text, txtNoticia.Text, txtData.Text);
+            objCadNoticia.alterar(txtidNoticia.Text, txtNoticia.Text, txtData.Text, txtTipoNoticia.Text);
             Response.Redirect(Request.RawUrl);
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
             CadNoticia objCadNoticia = new CadNoticia();
-            objCadNoticia.alterar(txtidNoticia.Text, txtNoticia.Text, txtData.Text);
+            objCadNoticia.alterar(txtidNoticia.Text, txtNoticia.Text, txtData.Text, txtTipoNoticia.Text);
             Response.Redirect(Request.RawUrl);
         }
 
@@ -55,7 +55,10 @@ namespace WebAppExercicio
             txtidNoticia.Text = Server.HtmlDecode(row.Cells[1].Text);
             txtNoticia.Text = Server.HtmlDecode(row.Cells[2].Text);
             txtData.Text = Server.HtmlDecode(row.Cells[3].Text);
+            txtTipoNoticia.Text = Server.HtmlDecode(row.Cells[4].Text);
         }
+
+        
 
     }
 }
