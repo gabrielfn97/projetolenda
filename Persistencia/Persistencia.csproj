@@ -44,6 +44,7 @@
     <Compile Include="pCadEstado.cs" />
     <Compile Include="pCadFilmes.cs" />
     <Compile Include="pCadNoticia.cs" />
+    <Compile Include="pDadosComplementares.cs" />
     <Compile Include="pUsuarios.cs" />
     <Compile Include="Conexao.cs" />
     <Compile Include="pGenero.cs" />

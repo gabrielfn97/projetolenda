@@ -45,6 +45,7 @@
     <Compile Include="CadFilmes.cs" />
     <Compile Include="CadNoticia.cs" />
     <Compile Include="Categoria.cs" />
+    <Compile Include="DadosComplementares.cs" />
     <Compile Include="Genero.cs">
       <SubType>Code</SubType>
     </Compile>
