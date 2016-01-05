@@ -12,7 +12,7 @@ namespace Persistencia
         String idFilme;
         String qtdEstrela;
 
-        public void inserir(String idLogin, String idFilme, String qtdEstrela)
+        public void inserir(String idLogin, String idFilme, int qtdEstrela)
         {
             String SQL = "INSERT INTO VotacaoFilme(idLogin, idFilme, qtdEstrela) VALUES(" + idLogin + ",'" + idFilme + "','" + qtdEstrela + "')";
             Conexao oConexao = new Conexao("SQLServer");
