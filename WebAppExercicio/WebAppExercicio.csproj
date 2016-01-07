@@ -174,9 +174,12 @@
     <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\xtcore.js" />
     <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\zrt_lookup.html" />
     <Content Include="frmCadCategoria.aspx" />
+    <Content Include="frmCadCidade.aspx" />
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadFilmes.aspx" />
     <Content Include="frmCadLogin.aspx" />
+    <Content Include="frmCritica.aspx" />
+    <Content Include="frmCadNoticia.aspx" />
     <Content Include="frmGeneros.aspx" />
     <Content Include="frmLogin.aspx" />
     <Content Include="index.aspx" />
@@ -185,6 +188,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadCidade.aspx.cs">
+      <DependentUpon>frmCadCidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadCidade.aspx.designer.cs">
+      <DependentUpon>frmCadCidade.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadEstado.aspx.cs">
       <DependentUpon>frmCadEstado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -212,6 +222,20 @@
     </Compile>
     <Compile Include="frmCadCategoria.aspx.designer.cs">
       <DependentUpon>frmCadCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCritica.aspx.cs">
+      <DependentUpon>frmCritica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCritica.aspx.designer.cs">
+      <DependentUpon>frmCritica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadNoticia.aspx.cs">
+      <DependentUpon>frmCadNoticia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadNoticia.aspx.designer.cs">
+      <DependentUpon>frmCadNoticia.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmGeneros.aspx.cs">
       <DependentUpon>frmGeneros.aspx</DependentUpon>
