@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="frmCadCategoria.aspx" />
+    <Content Include="frmCadCidade.aspx" />
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadFilmes.aspx" />
     <Content Include="frmCadLogin.aspx" />
@@ -67,6 +68,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadCidade.aspx.cs">
+      <DependentUpon>frmCadCidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCadCidade.aspx.designer.cs">
+      <DependentUpon>frmCadCidade.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadEstado.aspx.cs">
       <DependentUpon>frmCadEstado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
