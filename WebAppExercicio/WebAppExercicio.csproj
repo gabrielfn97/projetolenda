@@ -57,6 +57,122 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema.html" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\007066.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\008402.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\034771.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\047891.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\054094.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\059UOUiBZofdp2zuH0cIrS6t6ROEcPA-84f-syFU6Gs.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\075397.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\077322.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\090865.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\097306.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\1074358075-postmessagerelay.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\135727.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\146591.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\162287%281%29.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\162287.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\165390.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\181510%281%29.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\181510.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\181925.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\19961317.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\202939.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\214995.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\220036%281%29.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\220036.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\222585.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\240311.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\25_celebridades_antes_fama_300x80.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\260206.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\262364.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\266086.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\285463.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\289542.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\308191.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\312988.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\314536.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\317714.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\335643.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\341047%281%29.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\341047.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\353206.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\396291.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\398972.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\406962.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\408904.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\411172.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\421653.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\429658%281%29.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\429658.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\470611.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\490912.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\514203.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\522630.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\533731.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\545165.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\551564.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\570648%281%29.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\570648.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\583171.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\585961.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\586972.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\593307.jpg" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\999139055.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\abg.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\adblk.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\addata.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\ads.html" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\analytics.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\api.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\base.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\beacon.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\bt-clique-aproveite.png" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\ca-pub-4494963028298649.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\client.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\cm.html" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\cond-V-G_1.png" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\conversion.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\core-rpc-shindig.random-shindig.sha1.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\core_a.css" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\core_b.css" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\ddc.html" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\emily.html" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\empty.gif" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\Enabler.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\environment.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\expansion_embed.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\fbds.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\front.min.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\googlelogo_color_112x36dp.png" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\gtm.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\gw.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\head.min.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\ima3.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\index.html" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\jwplayer.min.css" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\jwplayer.min.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\loader_blue.gif" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\local_7.1.css" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\logo-acom.png" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\logo-megaoff-natal-G.png" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\osd.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\pixel.html" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\postmessageRelay.html" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\push.html" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\resources.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\sdk.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\show2.asp" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\show_ads_impl.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\t3m.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\texto2-13_1.png" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\tm22518.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\twitter-b.png" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\widgets.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\xd_arbiter.html" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\xtcore.js" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\zrt_lookup.html" />
     <Content Include="frmCadCategoria.aspx" />
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadFilmes.aspx" />
@@ -64,7 +180,9 @@
     <Content Include="frmGeneros.aspx" />
     <Content Include="frmLogin.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="StyleSheetIndex.css" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="frmCadEstado.aspx.cs">
@@ -117,8 +235,34 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\acScriptHandlerEx%281%29.ashx" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\acScriptHandlerEx.ashx" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\adx" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\b" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\ca" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\cb=gapi.loaded_0" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\cm" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\cms" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\img" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\kids=0%3broute=home%3busr=0" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\pixel" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\pixel%281%29" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\rc" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\req" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\req%281%29" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\rs" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\saved_resource" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\usr" />
+    <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\usr%281%29" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
