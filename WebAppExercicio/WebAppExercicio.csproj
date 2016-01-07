@@ -61,6 +61,7 @@
     <Content Include="frmCadEstado.aspx" />
     <Content Include="frmCadFilmes.aspx" />
     <Content Include="frmCadLogin.aspx" />
+    <Content Include="frmCritica.aspx" />
     <Content Include="frmGeneros.aspx" />
     <Content Include="frmLogin.aspx" />
     <Content Include="index.aspx" />
@@ -94,6 +95,13 @@
     </Compile>
     <Compile Include="frmCadCategoria.aspx.designer.cs">
       <DependentUpon>frmCadCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCritica.aspx.cs">
+      <DependentUpon>frmCritica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCritica.aspx.designer.cs">
+      <DependentUpon>frmCritica.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmGeneros.aspx.cs">
       <DependentUpon>frmGeneros.aspx</DependentUpon>

@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pCadCritica.cs" />
     <Compile Include="pCadEstado.cs" />
     <Compile Include="pCadFilmes.cs" />
     <Compile Include="pUsuarios.cs" />
