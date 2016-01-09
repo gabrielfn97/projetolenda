@@ -180,6 +180,7 @@
     <Content Include="frmCadLogin.aspx" />
     <Content Include="frmCritica.aspx" />
     <Content Include="frmCadNoticia.aspx" />
+    <Content Include="frmDadosComplementares.aspx" />
     <Content Include="frmGeneros.aspx" />
     <Content Include="frmLogin.aspx" />
     <Content Include="index.aspx" />
@@ -236,6 +237,13 @@
     </Compile>
     <Compile Include="frmCadNoticia.aspx.designer.cs">
       <DependentUpon>frmCadNoticia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosComplementares.aspx.cs">
+      <DependentUpon>frmDadosComplementares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDadosComplementares.aspx.designer.cs">
+      <DependentUpon>frmDadosComplementares.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmGeneros.aspx.cs">
       <DependentUpon>frmGeneros.aspx</DependentUpon>
