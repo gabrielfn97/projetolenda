@@ -59,6 +59,11 @@ namespace WebAppExercicio
             txtTipoNoticia.Text = Server.HtmlDecode(row.Cells[4].Text);
         }
 
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("reNoticias.aspx");
+        }
+
         
 
     }

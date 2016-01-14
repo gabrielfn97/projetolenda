@@ -35,6 +35,8 @@
 &nbsp;<asp:Button ID="btnAlterar" runat="server" OnClick="btnAlterar_Click" Text="Alterar" />
 &nbsp;<asp:Button ID="btnApagar" runat="server" OnClick="Button3_Click" Text="Apagar" />
     
+    &nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Listar Todas as Noticias" />
+    
     </div>
         <asp:GridView ID="gdvCadNoticia" runat="server" AutoGenerateSelectButton="True" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <AlternatingRowStyle BackColor="White" />
