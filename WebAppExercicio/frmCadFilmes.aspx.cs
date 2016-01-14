@@ -65,5 +65,10 @@ namespace WebAppExercicio
             txtAtoresPrincipais.Text = Server.HtmlDecode(row.Cells[9].Text);
             txtNacionalidade.Text = Server.HtmlDecode(row.Cells[10].Text);
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("frmListarTodosFilmes.aspx");
+        }
     }
 }

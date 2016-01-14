@@ -46,6 +46,8 @@
 &nbsp;<asp:Button ID="btnAlterar" runat="server" Text="Alterar" Width="47px" OnClick="btnAlterar_Click" />
 &nbsp;<asp:Button ID="btnApagar" runat="server" Text="Apagar" OnClick="btnApagar_Click1"  />
     
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Listar Todos Filmes" />
+    
         <br />
     
     </div>
