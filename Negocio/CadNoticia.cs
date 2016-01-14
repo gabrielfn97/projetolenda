@@ -38,6 +38,11 @@ namespace Negocio
             pCadNoticia objnoticia = new pCadNoticia();
             return objnoticia.consultarTodos();
         }
+        public DataSet dtListarTodasNoticias()
+        {
+            pCadNoticia objListarNoticia = new pCadNoticia();
+            return objListarNoticia.consultarTodos();
+        }
 
     }
 }

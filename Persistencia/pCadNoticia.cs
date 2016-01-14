@@ -61,6 +61,20 @@ namespace Persistencia
             return ds;
         }
 
+       public DataSet dtListarTodasNoticias()
+        {
+            String SQL = "SELECT notica, data, TipoNoticia FROM dbo.noticia";
+
+            Conexao oConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+
+            oConexao.fechaConexao();
+
+            return ds;
+        }
 
     }
 }

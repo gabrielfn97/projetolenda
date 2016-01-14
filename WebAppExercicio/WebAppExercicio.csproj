@@ -187,6 +187,7 @@
     <Content Include="frmLogin.aspx" />
     <Content Include="frmRelatorioFilmes.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="reNoticias.aspx" />
     <Content Include="StyleSheetIndex.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -277,6 +278,13 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reNoticias.aspx.cs">
+      <DependentUpon>reNoticias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reNoticias.aspx.designer.cs">
+      <DependentUpon>reNoticias.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
