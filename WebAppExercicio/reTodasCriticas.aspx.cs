@@ -18,8 +18,8 @@ namespace WebAppExercicio
 
         private void carregarTabelaDataSet()
         {
-            CadCritica objListarTodasNoticias = new CadCritica();
-            DataSet dtListarTodosFilmes = objListarTodasNoticias.consultarTodos();
+            CadCritica objListarTodasCriticas = new CadCritica();
+            DataSet dtListarTodosFilmes = objListarTodasCriticas.consultarTodos();
 
             for (int linha = 0; linha <= dtListarTodosFilmes.Tables["Tabela"].Rows.Count - 1; linha++)
             {
