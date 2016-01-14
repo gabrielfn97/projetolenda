@@ -43,13 +43,5 @@ namespace Negocio
             pCadFilmes objCadFilmes = new pCadFilmes();
             return objCadFilmes.consultarTodos();
         }
-
-        public DataSet dtListarTodosFilmes()
-        {
-            pListarTodosFilmes objListarTodosFilmes = new pListarTodosFilmes();
-            return objListarTodosFilmes.dtListarTodosfilmes();
-        }
-
-
     }
 }
