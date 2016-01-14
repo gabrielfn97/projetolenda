@@ -47,7 +47,6 @@
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Inserir" />
         <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Alterar" />
         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Apagar" />
-        <asp:Button ID="Button4" runat="server" Text="Button" />
         <br />
         <br />
         <asp:GridView ID="gdvDadosComplementares" runat="server" AutoGenerateSelectButton="True" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gdvDadosComplementares_SelectedIndexChanged">
