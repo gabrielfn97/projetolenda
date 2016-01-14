@@ -10,18 +10,26 @@
     <form id="form1" runat="server">
     <div>
     
+        <asp:Label ID="Label5" runat="server" Text="CADASTRO DE NOTICIAS"></asp:Label>
+        <br />
+        <br />
+    
         <asp:Label ID="Label1" runat="server" Text="idNoticia" Visible="False"></asp:Label>
         <asp:TextBox ID="txtidNoticia" runat="server" Visible="False"></asp:TextBox>
         <br />
+        <br />
         <asp:Label ID="Label2" runat="server" Text="Noticia: "></asp:Label>
-        <asp:TextBox ID="txtNoticia" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtNoticia" runat="server" Height="142px" Width="500px"></asp:TextBox>
+        <br />
+        <br />
         <br />
         <asp:Label ID="Label3" runat="server" Text="Data: "></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtData" runat="server"></asp:TextBox>
         <br />
         <asp:Label ID="Label4" runat="server" Text="Tipo Notícia"></asp:Label>
         :
-        <asp:TextBox ID="txtTipoNoticia" runat="server" OnTextChanged="txtTipoNoticia_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="txtTipoNoticia" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="btnInserir" runat="server" OnClick="Button1_Click" Text="Inserir" />
 &nbsp;<asp:Button ID="btnAlterar" runat="server" OnClick="btnAlterar_Click" Text="Alterar" />
