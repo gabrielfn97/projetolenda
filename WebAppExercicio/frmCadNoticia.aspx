@@ -5,6 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+
+        #Select1 {
+            width: 111px;
+        }
+        #txtTipoNoticia {
+            width: 73px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -27,9 +36,15 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtData" runat="server"></asp:TextBox>
         <br />
+        <br />
         <asp:Label ID="Label4" runat="server" Text="Tipo Notícia"></asp:Label>
-        :
-        <asp:TextBox ID="txtTipoNoticia" runat="server"></asp:TextBox>
+        :&nbsp;
+        <asp:DropDownList ID="cboTipoNoticia" runat="server">
+            <asp:ListItem>Selecione</asp:ListItem>
+            <asp:ListItem Value="cinema">Cinema</asp:ListItem>
+            <asp:ListItem Value="site">Site</asp:ListItem>
+        </asp:DropDownList>
+        <br />
         <br />
         <asp:Button ID="btnInserir" runat="server" OnClick="Button1_Click" Text="Inserir" />
 &nbsp;<asp:Button ID="btnAlterar" runat="server" OnClick="btnAlterar_Click" Text="Alterar" />
