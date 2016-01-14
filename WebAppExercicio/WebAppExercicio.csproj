@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="figuras\1.jpg" />
+    <Content Include="figuras\estrela.jpg" />
     <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema.html" />
     <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\007066.jpg" />
     <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\008402.jpg" />
@@ -180,7 +182,6 @@
     <Content Include="frmCadLogin.aspx" />
     <Content Include="frmCritica.aspx" />
     <Content Include="frmCadNoticia.aspx" />
-    <Content Include="frmDadosComplementares.aspx" />
     <Content Include="frmGeneros.aspx" />
     <Content Include="frmLogin.aspx" />
     <Content Include="frmRelatorioCadFilmes.aspx" />
@@ -189,6 +190,7 @@
     <Content Include="StyleSheetIndex.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="frmCadCidade.aspx.cs">
@@ -240,13 +242,6 @@
     <Compile Include="frmCadNoticia.aspx.designer.cs">
       <DependentUpon>frmCadNoticia.aspx</DependentUpon>
     </Compile>
-    <Compile Include="frmDadosComplementares.aspx.cs">
-      <DependentUpon>frmDadosComplementares.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmDadosComplementares.aspx.designer.cs">
-      <DependentUpon>frmDadosComplementares.aspx</DependentUpon>
-    </Compile>
     <Compile Include="frmGeneros.aspx.cs">
       <DependentUpon>frmGeneros.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -290,6 +285,13 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\acScriptHandlerEx%281%29.ashx" />
@@ -324,6 +326,7 @@
       <Name>Negocio</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

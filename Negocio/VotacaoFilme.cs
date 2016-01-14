@@ -15,20 +15,13 @@ namespace Negocio
         String idFilme;
         String qtdEstrela;
 
-        public void inserir()
+        public void votacao(String idLogin, String idFilme, int nota)
         {
-           
+            pVotacaoFilme objtp = new pVotacaoFilme();
+            objtp.inserir(idLogin, idFilme, nota);
         }
 
-        public void alterar()
-        {
-            
-        }
-
-        public void apagar()
-        {
-            
-        }
+        
 
         
 
