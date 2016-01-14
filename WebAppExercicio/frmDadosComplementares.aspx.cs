@@ -13,12 +13,13 @@ namespace WebAppExercicio
     public partial class frmDadosComplementares : System.Web.UI.Page
     {
         DataSet lista;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
-                CadEstado oCadEstado = new CadEstado();
-                lista = oCadEstado.consultarTodos();
+                DadosComplementares objDadosComplementares = new DadosComplementares();
+                lista = objDadosComplementares.consultarTodos();
 
                 if (lista != null)
                 {
