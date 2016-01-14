@@ -60,6 +60,22 @@ namespace Persistencia
 
             return ds;
         }
+        public DataSet consultarNoticiasCinema()
+        {
+            String SQL = "SELECT * FROM dbo.noticia WHERE TipoNoticia = '%cinema%' ";
+
+            Conexao oConexao = new Conexao("SQLServer");
+
+            SqlDataAdapter adapter = new SqlDataAdapter(SQL, oConexao.cn);
+            DataSet ds = new DataSet("Tabela");
+            adapter.Fill(ds, "Tabela");
+
+            oConexao.fechaConexao();
+
+            return ds;
+        }
+
+
 
 
     }
