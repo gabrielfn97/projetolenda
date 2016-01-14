@@ -188,6 +188,7 @@
     <Content Include="frmRelatorioFilmes.aspx" />
     <Content Include="index.aspx" />
     <Content Include="reNoticias.aspx" />
+    <Content Include="reNoticiasCinema.aspx" />
     <Content Include="reTodasCriticas.aspx" />
     <Content Include="StyleSheetIndex.css" />
     <Content Include="Web.config" />
@@ -286,6 +287,12 @@
     </Compile>
     <Compile Include="reNoticias.aspx.designer.cs">
       <DependentUpon>reNoticias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reNoticiasCinema.aspx.cs">
+      <DependentUpon>reNoticiasCinema.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reNoticiasCinema.aspx.designer.cs">
+      <DependentUpon>reNoticiasCinema.aspx</DependentUpon>
     </Compile>
     <Compile Include="reTodasCriticas.aspx.cs">
       <DependentUpon>reTodasCriticas.aspx</DependentUpon>
