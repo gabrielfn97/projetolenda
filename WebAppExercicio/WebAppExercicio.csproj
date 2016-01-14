@@ -184,7 +184,6 @@
     <Content Include="frmCadNoticia.aspx" />
     <Content Include="frmGeneros.aspx" />
     <Content Include="frmLogin.aspx" />
-    <Content Include="frmRelatorioCadFilmes.aspx" />
     <Content Include="frmRelatorioFilmes.aspx" />
     <Content Include="index.aspx" />
     <Content Include="StyleSheetIndex.css" />
@@ -255,13 +254,6 @@
     </Compile>
     <Compile Include="frmLogin.aspx.designer.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="frmRelatorioCadFilmes.aspx.cs">
-      <DependentUpon>frmRelatorioCadFilmes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmRelatorioCadFilmes.aspx.designer.cs">
-      <DependentUpon>frmRelatorioCadFilmes.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmRelatorioFilmes.aspx.cs">
       <DependentUpon>frmRelatorioFilmes.aspx</DependentUpon>
