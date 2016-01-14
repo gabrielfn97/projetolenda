@@ -49,6 +49,7 @@ namespace WebAppExercicio
         {
             DadosComplementares objDadosComplementares = new DadosComplementares();
             objDadosComplementares.inserir (txtidDadosComplementares.Text,txtEndereco.Text, txtTelefone.Text, txtBairro.Text, txtEstadoCivil.Text,txtImgPerfilUrl.Text,txtDataNascimento.Text, txtSexo.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void Button3_Click(object sender, EventArgs e)
