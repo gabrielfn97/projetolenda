@@ -68,7 +68,7 @@ namespace WebAppExercicio
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("frmListarTodosFilmes.aspx");
+            Response.Redirect("frmRelatorioFilmes.aspx");
         }
     }
 }

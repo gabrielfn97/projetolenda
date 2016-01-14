@@ -20,7 +20,7 @@ namespace Persistencia
 
         public void inserir(String noticia, String data, String TipoNoticia)
         {
-            String SQL = "INSERT INTO dbo.noticia (noticia) VALUES('" + noticia + "','" + data + "' , '"+ TipoNoticia +"')";
+            String SQL = "INSERT INTO dbo.noticia (noticia, data, TipoNoticia) VALUES('" + noticia + "','" + data + "' , '"+ TipoNoticia +"')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
