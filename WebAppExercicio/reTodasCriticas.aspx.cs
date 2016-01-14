@@ -1,11 +1,11 @@
-﻿using Negocio;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Negocio;
+using System.Data;
 
 namespace WebAppExercicio
 {
@@ -16,41 +16,20 @@ namespace WebAppExercicio
             carregarTabelaDataSet();
         }
 
-        private void carregarTabelaTeste()
-        {
-            int rowCnt, rowCtr, cellCnt, cellCtr;
-
-            rowCnt = 2;
-            cellCnt = 3;
-
-            for (rowCtr = 1; rowCtr <= rowCnt; rowCtr++)
-            {
-                TableRow tRow = new TableRow();
-                tblTodasCriticas.Rows.Add(tRow);
-
-                for (cellCtr = 1; cellCtr <= cellCnt; cellCtr++)
-                {
-                    TableCell tCell = new TableCell();
-                    tCell.Text = "Linha" + rowCtr + ", Coluna" + cellCtr;
-                    tRow.Cells.Add(tCell);
-                }
-            }
-        }
-
         private void carregarTabelaDataSet()
         {
-            CadCritica objTodasCriticas = new CadCritica();
-            DataSet reTodasCriticas = objTodasCriticas.reTodasCriticas();
+            CadCritica objListarTodasCriticas = new CadCritica();
+            DataSet dtListarTodosFilmes = objListarTodasCriticas.consultarTodos();
 
-            for (int linha = 0; linha <= reTodasCriticas.Tables["Tabela"].Rows.Count - 1; linha++)
+            for (int linha = 0; linha <= dtListarTodosFilmes.Tables["Tabela"].Rows.Count - 1; linha++)
             {
                 TableRow tRow = new TableRow();
-                tblTodasCriticas.Rows.Add(tRow);
+                tabelaCriticas.Rows.Add(tRow);
 
                 for (int coluna = 0; coluna <= 3; coluna++)
                 {
                     TableCell tCell = new TableCell();
-                    tCell.Text = Convert.ToString(reTodasCriticas.Tables["Tabela"].Rows[linha][coluna]);
+                    tCell.Text = Convert.ToString(dtListarTodosFilmes.Tables["Tabela"].Rows[linha][coluna]);
                     tRow.Cells.Add(tCell);
                 }
             }

@@ -287,6 +287,13 @@
     <Compile Include="reNoticias.aspx.designer.cs">
       <DependentUpon>reNoticias.aspx</DependentUpon>
     </Compile>
+    <Compile Include="reTodasCriticas.aspx.cs">
+      <DependentUpon>reTodasCriticas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reTodasCriticas.aspx.designer.cs">
+      <DependentUpon>reTodasCriticas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
