@@ -43,6 +43,7 @@
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Inserir" />
         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text="Alterar" />
         <asp:Button ID="Button3" runat="server" OnClick="Button3_Click1" Text="Apagar" />
+        <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Ultimas Criticas" />
         <br />
         <br />
         <br />

@@ -33,6 +33,7 @@ namespace WebAppExercicio
         {
             CadCritica objCadCritica = new CadCritica();
             objCadCritica.inserir( txtNome.Text,txtCritica.Text,txtData.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
 
@@ -59,6 +60,12 @@ namespace WebAppExercicio
             txtNome.Text = Server.HtmlDecode(row.Cells[1].Text);
             txtData.Text = Server.HtmlDecode(row.Cells[3].Text);
             txtCritica.Text = Server.HtmlDecode(row.Cells[2].Text);
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("reTodasCriticas.aspx");
+        
         }
     }
 }

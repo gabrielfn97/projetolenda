@@ -36,6 +36,12 @@ namespace Negocio
             pCadCritica objCadCritica = new pCadCritica();
             return objCadCritica.consultarTodos();
         }
+
+        public DataSet reTodasCriticas()
+        {
+            pCadCritica objCadCritica = new pCadCritica();
+            return objCadCritica.reTodasCriticas();
+        }
     }
 
 }

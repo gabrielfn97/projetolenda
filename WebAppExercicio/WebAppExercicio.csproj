@@ -187,6 +187,7 @@
     <Content Include="frmLogin.aspx" />
     <Content Include="frmRelatorioFilmes.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="reTodasCriticas.aspx" />
     <Content Include="StyleSheetIndex.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -244,6 +245,7 @@
     </Compile>
     <Compile Include="frmDadosComplementares.aspx.cs">
       <DependentUpon>frmDadosComplementares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="frmDadosComplementares.aspx.designer.cs">
       <DependentUpon>frmDadosComplementares.aspx</DependentUpon>
@@ -277,6 +279,13 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reTodasCriticas.aspx.cs">
+      <DependentUpon>reTodasCriticas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reTodasCriticas.aspx.designer.cs">
+      <DependentUpon>reTodasCriticas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

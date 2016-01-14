@@ -34,6 +34,7 @@ namespace WebAppExercicio
         {
             CadFilmes objCadFilmes = new CadFilmes();
             objCadFilmes.inserir(txtNomeFilme.Text, txtClassificacao.Text, txtGenero.Text, txtIframe.Text, txtURLImagem.Text, txtNota.Text, txtDataLacamento.Text, txtAtoresPrincipais.Text, txtNacionalidade.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
