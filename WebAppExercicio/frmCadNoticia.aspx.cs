@@ -32,6 +32,7 @@ namespace WebAppExercicio
         {
             CadNoticia objCadNoticia = new CadNoticia();
             objCadNoticia.inserir(txtNoticia.Text, txtData.Text, txtTipoNoticia.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
