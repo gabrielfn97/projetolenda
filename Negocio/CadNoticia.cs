@@ -39,6 +39,12 @@ namespace Negocio
             return objnoticia.consultarTodos();
         }
 
+        public DataSet consultarNoticiasCinema()
+        {
+            pCadNoticia objnoticiacinema = new pCadNoticia();
+            return objnoticiacinema.consultarNoticiasCinema();
+        }
+
     }
 }
   
