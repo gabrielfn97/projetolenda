@@ -19,12 +19,12 @@ namespace WebAppExercicio
         private void carregarTabelaDataSet()
         {
             CadNoticia objListarTodosFilmes = new CadNoticia();
-            DataSet dtListarTodosFilmes = objListarTodosFilmes.dtListarTodasNoticias();
+            DataSet dtListarTodosFilmes = objListarTodosFilmes.consultarNoticiasCinema();
 
             for (int linha = 0; linha <= dtListarTodosFilmes.Tables["Tabela"].Rows.Count - 1; linha++)
             {
                 TableRow tRow = new TableRow();
-                tabelaNoticias.Rows.Add(tRow);
+                tabelaNoticiasCinema.Rows.Add(tRow);
 
                 for (int coluna = 0; coluna <= 3; coluna++)
                 {
