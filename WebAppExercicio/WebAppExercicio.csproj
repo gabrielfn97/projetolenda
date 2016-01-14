@@ -188,7 +188,6 @@
     <Content Include="frmRelatorioFilmes.aspx" />
     <Content Include="index.aspx" />
     <Content Include="reNoticias.aspx" />
-    <Content Include="reTodasCriticas.aspx" />
     <Content Include="StyleSheetIndex.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
