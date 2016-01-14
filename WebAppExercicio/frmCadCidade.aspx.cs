@@ -16,6 +16,17 @@ namespace WebAppExercicio
         {
             if (!Page.IsPostBack)
             {
+                CadEstado oCadEstado = new CadEstado();
+                lista = oCadEstado.consultarTodos();
+                
+                cboEstado.DataTextField = "sigla";
+                cboEstado.DataValueField = "id";
+                cboEstado.DataSource = lista;
+                cboEstado.DataMember = "Tabela";
+                cboEstado.DataBind();
+                cboEstado.Items.Insert(0,"Selecione");
+                cboEstado.SelectedIndex = 0 ;
+
                 CadCidade oCadCidade = new CadCidade();
                 lista = oCadCidade.consultarTodos();
 
@@ -30,15 +41,22 @@ namespace WebAppExercicio
 
         protected void btnInserir_Click(object sender, EventArgs e)
         {
-            CadCidade objCadCidade = new CadCidade();
-            objCadCidade.inserir(txtfkEstado.Text, txtcidade.Text);
-            Response.Redirect(Request.RawUrl);
+            if (cboEstado.SelectedValue.Equals(0))
+            {
+
+            }
+            else
+            {
+                CadCidade objCadCidade = new CadCidade();
+                objCadCidade.inserir(cboEstado.SelectedValue, txtcidade.Text);
+                Response.Redirect(Request.RawUrl);
+            }
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
             CadCidade objCadCidade = new CadCidade();
-            objCadCidade.alterar(txtfkEstado.Text, txtcidade.Text, txtidCadCidade.Text);
+            objCadCidade.alterar(cboEstado.SelectedValue, txtcidade.Text, txtidCadCidade.Text);
             Response.Redirect(Request.RawUrl);
         }
 
@@ -54,7 +72,7 @@ namespace WebAppExercicio
             GridViewRow row = gdvCadCidade.SelectedRow;
 
             txtidCadCidade.Text = Server.HtmlDecode(row.Cells[1].Text);
-            txtfkEstado.Text = Server.HtmlDecode(row.Cells[2].Text);
+            cboEstado.SelectedValue = Server.HtmlDecode(row.Cells[4].Text);
             txtcidade.Text = Server.HtmlDecode(row.Cells[3].Text);
         }
     }

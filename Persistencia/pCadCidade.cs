@@ -46,7 +46,7 @@ namespace Persistencia
 
         public DataSet consultarTodos()
         {
-            String SQL = "SELECT * FROM dbo.CadCidade";
+            String SQL = "SELECT idCadCidade as ID, sigla as Estado, cidade as Cidade, fkEstado FROM dbo.CadCidade inner join dbo.CadEstado on idCadEstado = fkEstado";
 
             Conexao oConexao = new Conexao("SQLServer");
 

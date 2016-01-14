@@ -49,13 +49,13 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Controle txtfkEstado.
+        /// Controle cboEstado.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtfkEstado;
+        protected global::System.Web.UI.WebControls.DropDownList cboEstado;
         
         /// <summary>
         /// Controle Label2.

@@ -42,6 +42,7 @@ namespace WebAppExercicio
         {
             Categoria objCategoria = new Categoria();
             objCategoria.inserir(txtdescricao.Text, txtNdoFilme.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void btnAlterar_Click1(object sender, EventArgs e)

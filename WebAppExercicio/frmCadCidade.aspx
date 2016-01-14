@@ -14,8 +14,9 @@
         <asp:Label ID="Label1" runat="server" Text="idCadCidade: " Visible="False"></asp:Label>
         <asp:TextBox ID="txtidCadCidade" runat="server" Visible="False"></asp:TextBox>
         <br />
-        <asp:Label ID="Label3" runat="server" Text="fkEstado: "></asp:Label>
-        <asp:TextBox ID="txtfkEstado" runat="server">1</asp:TextBox>
+        <asp:Label ID="Label3" runat="server" Text="Estado: "></asp:Label>
+        <asp:DropDownList ID="cboEstado" runat="server">
+        </asp:DropDownList>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Cidade: "></asp:Label>
         <asp:TextBox ID="txtcidade" runat="server"></asp:TextBox>
