@@ -12,24 +12,23 @@ namespace Negocio
     {
         String idCategoria;
         String descricao;
-        int idClassificacao;
 
-        public void inserir(String descricao, String idClassificacao)
+        public void inserir(String idCategoria, String descricao)
         {
             pCategoria objCategoria = new pCategoria();
-            objCategoria.inserir(descricao, idClassificacao);
+            objCategoria.inserir(descricao);
         }
 
-        public void alterar(String descricao, int idClassificacao, String idCategoria)
+        public void alterar(String idCategoria, String descricao)
         {
             pCategoria objCategoria = new pCategoria();
-            objCategoria.alterar(descricao, idClassificacao, idCategoria);
+            objCategoria.alterar(idCategoria, descricao);
         }
 
-        public void apagar(String idCategoria, String descricao, int idClassificacao)
+        public void apagar(String idCategoria, String descricao)
         {
             pCategoria objCategoria = new pCategoria();
-            objCategoria.apagar(idCategoria, descricao, idClassificacao);
+            objCategoria.apagar(idCategoria, descricao);
         }
 
         public DataSet consultarTodos()

@@ -20,15 +20,15 @@ namespace Negocio
             pCadCritica objCadCritica = new pCadCritica();
             objCadCritica.inserir(nome,critica,data);
         }
-        public void alterar(String nome, String critica, String data) 
+        public void alterar(String idCritica, String nome, String critica, String data) 
         {
             pCadCritica objCadCritica = new pCadCritica();
-            objCadCritica.inserir(nome, critica, data);
+            objCadCritica.alterar(idCritica, nome, critica, data);
         }
-        public void apagar (String nome, String critica, String data)
+        public void apagar (String idCritica, String nome, String critica, String data)
         {
             pCadCritica objCadCritica = new pCadCritica();
-            objCadCritica.inserir(nome, critica, data);
+            objCadCritica.apagar(idCritica, nome, critica, data);
         }
 
         public DataSet consultarTodos()

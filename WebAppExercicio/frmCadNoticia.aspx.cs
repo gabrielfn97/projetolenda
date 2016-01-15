@@ -45,7 +45,7 @@ namespace WebAppExercicio
         protected void Button3_Click(object sender, EventArgs e)
         {
             CadNoticia objCadNoticia = new CadNoticia();
-            objCadNoticia.alterar(txtidNoticia.Text, txtNoticia.Text, txtData.Text, cboTipoNoticia.SelectedValue);
+            objCadNoticia.apagar(txtidNoticia.Text, txtNoticia.Text, txtData.Text, cboTipoNoticia.SelectedValue);
             Response.Redirect(Request.RawUrl);
         }
 
@@ -64,7 +64,10 @@ namespace WebAppExercicio
             Response.Redirect("reNoticias.aspx");
         }
 
-        
+        protected void ltNoticiasCinema_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("reNoticiasCinema.aspx");
+        }
 
     }
 }

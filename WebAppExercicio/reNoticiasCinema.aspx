@@ -16,6 +16,10 @@
         <asp:Table ID="tabelaNoticiasCinema" runat="server">
         </asp:Table>
     
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnVoltar" runat="server" OnClick="btnVoltar_Click" Text="Pagina dos Formularios" />
+    
     </div>
     </form>
 </body>

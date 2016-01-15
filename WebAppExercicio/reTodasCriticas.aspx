@@ -16,6 +16,10 @@
         <asp:Table ID="tabelaCriticas" runat="server">
         </asp:Table>
     
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Pagina dos Formularios" />
+    
     </div>
     </form>
 </body>

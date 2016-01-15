@@ -24,7 +24,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void alterar(String nome, String critica, String data)
+        public void alterar(String idCritica, String nome, String critica, String data)
         {
             String SQL = "UPDATE dbo.Critica3";
             SQL += " SET nome = '" + nome + "',  critica = '" + critica + "', data = '" + data + "'";
@@ -35,7 +35,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void apagar(String nome, String critica, String data)
+        public void apagar(String idCritica, String nome, String critica, String data)
         {
             String SQL = "DELETE dbo.Critica3 WHERE idCritica =" + idCritica;
 
@@ -46,7 +46,7 @@ namespace Persistencia
 
         public DataSet consultarTodos()
         {
-            String SQL = "SELECT * FROM dbo.Critica3";
+            String SQL = "SELECT idCritica as ID, nome as Nome, critica as Critica, data as Data FROM dbo.Critica3";
 
             Conexao oConexao = new Conexao("SQLServer");
 

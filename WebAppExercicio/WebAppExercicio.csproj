@@ -175,6 +175,8 @@
     <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\xd_arbiter.html" />
     <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\xtcore.js" />
     <Content Include="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema_files\zrt_lookup.html" />
+    <Content Include="fmrFormularios.aspx" />
+    <Content Include="fmrRecSenha.aspx" />
     <Content Include="frmCadCategoria.aspx" />
     <Content Include="frmCadCidade.aspx" />
     <Content Include="frmCadEstado.aspx" />
@@ -185,17 +187,38 @@
     <Content Include="frmDadosComplementares.aspx" />
     <Content Include="frmGeneros.aspx" />
     <Content Include="frmLogin.aspx" />
+    <Content Include="frmRecSenha2.aspx" />
     <Content Include="frmRelatorioFilmes.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="reCidades.aspx" />
+    <Content Include="reClassificacao.aspx" />
+    <Content Include="reDadosComplementares.aspx" />
+    <Content Include="reEstados.aspx" />
+    <Content Include="reGeneros.aspx" />
     <Content Include="reNoticias.aspx" />
     <Content Include="reNoticiasCinema.aspx" />
     <Content Include="reTodasCriticas.aspx" />
+    <Content Include="reUsuarios.aspx" />
     <Content Include="StyleSheetIndex.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fmrFormularios.aspx.cs">
+      <DependentUpon>fmrFormularios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fmrFormularios.aspx.designer.cs">
+      <DependentUpon>fmrFormularios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fmrRecSenha.aspx.cs">
+      <DependentUpon>fmrRecSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fmrRecSenha.aspx.designer.cs">
+      <DependentUpon>fmrRecSenha.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmCadCidade.aspx.cs">
       <DependentUpon>frmCadCidade.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -266,6 +289,13 @@
     <Compile Include="frmLogin.aspx.designer.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmRecSenha2.aspx.cs">
+      <DependentUpon>frmRecSenha2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRecSenha2.aspx.designer.cs">
+      <DependentUpon>frmRecSenha2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmRelatorioFilmes.aspx.cs">
       <DependentUpon>frmRelatorioFilmes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -281,6 +311,41 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reCidades.aspx.cs">
+      <DependentUpon>reCidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reCidades.aspx.designer.cs">
+      <DependentUpon>reCidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reClassificacao.aspx.cs">
+      <DependentUpon>reClassificacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reClassificacao.aspx.designer.cs">
+      <DependentUpon>reClassificacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reDadosComplementares.aspx.cs">
+      <DependentUpon>reDadosComplementares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reDadosComplementares.aspx.designer.cs">
+      <DependentUpon>reDadosComplementares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reEstados.aspx.cs">
+      <DependentUpon>reEstados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reEstados.aspx.designer.cs">
+      <DependentUpon>reEstados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reGeneros.aspx.cs">
+      <DependentUpon>reGeneros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reGeneros.aspx.designer.cs">
+      <DependentUpon>reGeneros.aspx</DependentUpon>
+    </Compile>
     <Compile Include="reNoticias.aspx.cs">
       <DependentUpon>reNoticias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -290,6 +355,7 @@
     </Compile>
     <Compile Include="reNoticiasCinema.aspx.cs">
       <DependentUpon>reNoticiasCinema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="reNoticiasCinema.aspx.designer.cs">
       <DependentUpon>reNoticiasCinema.aspx</DependentUpon>
@@ -300,6 +366,13 @@
     </Compile>
     <Compile Include="reTodasCriticas.aspx.designer.cs">
       <DependentUpon>reTodasCriticas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reUsuarios.aspx.cs">
+      <DependentUpon>reUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reUsuarios.aspx.designer.cs">
+      <DependentUpon>reUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

@@ -10,22 +10,24 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:Label ID="Label4" runat="server" Text="idCadLogin" Visible="False"></asp:Label>
-        <asp:TextBox ID="txtidCadLogin" runat="server" Visible="False"></asp:TextBox>
-        <br />
-    
         <asp:Label ID="Label1" runat="server" Text="Email:"></asp:Label>
         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+        <asp:Label ID="Label4" runat="server" Text="idCadLogin" Visible="False"></asp:Label>
+        <asp:TextBox ID="txtidCadLogin" runat="server" Visible="False"></asp:TextBox>
         <br />
         <asp:Label ID="Label3" runat="server" Text="Usuário:"></asp:Label>
         <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Senha:"></asp:Label>
-        <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
         <br />
         <asp:Button ID="btnInserir" runat="server" Text="Inserir" OnClick="btnInserir_Click" />
         <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click" />
         <asp:Button ID="btnApagar" runat="server" Text="Apagar" OnClick="btnApagar_Click" />
+    
+        <br />
     
         <br />
     

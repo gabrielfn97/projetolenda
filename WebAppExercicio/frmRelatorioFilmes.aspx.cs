@@ -26,13 +26,18 @@ namespace WebAppExercicio
                 TableRow tRow = new TableRow();
                 tabelaFilmes.Rows.Add(tRow);
 
-                for (int coluna = 0; coluna <= 3; coluna++)
+                for (int coluna = 0; coluna <= 9; coluna++)
                 {
                     TableCell tCell = new TableCell();
                     tCell.Text = Convert.ToString(dtListarTodosFilmes.Tables["Tabela"].Rows[linha][coluna]);
                     tRow.Cells.Add(tCell);
                 }
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("fmrFormularios.aspx");
         }
     }
 }

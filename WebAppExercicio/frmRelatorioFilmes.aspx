@@ -12,8 +12,12 @@
     
         <asp:Label ID="Label1" runat="server" Text="Lista de todos os filmes"></asp:Label>
         <br />
+        <br />
         <asp:Table ID="tabelaFilmes" runat="server">
         </asp:Table>
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnVoltar" runat="server" OnClick="Button1_Click" Text="Pagina de Formularios" />
         <br />
     
     </div>

@@ -33,6 +33,7 @@ namespace WebAppExercicio
         {
             CadEstado objCadEstado = new CadEstado();
             objCadEstado.inserir( txtEstado.Text, txtSigla.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)

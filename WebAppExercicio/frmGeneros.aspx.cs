@@ -33,6 +33,7 @@ namespace WebAppExercicio
         {
             Genero objGenero = new Genero();
             objGenero.inserir(txtGeneros.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)

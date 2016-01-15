@@ -44,7 +44,7 @@ namespace Persistencia
 
         public DataSet consultarTodos()
         {
-            String SQL = "SELECT * FROM dbo.Generos";
+            String SQL = "SELECT idGeneros as ID, generos as Genero FROM dbo.Generos";
 
             Conexao oConexao = new Conexao("SQLServer");
 

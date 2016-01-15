@@ -13,20 +13,19 @@ namespace Persistencia
     {
         String idCategoria;
         String descricao;
-        int idClassificacao;
 
-        public void inserir(String descricao, String idClassificacao)
+        public void inserir(String descricao)
         {
-            String SQL = "INSERT INTO dbo.Categoria(descricao, idClassificacao) VALUES('" + descricao + "', " + Convert.ToInt32(idClassificacao) + ")";
+            String SQL = "INSERT INTO dbo.Categoria(descricao) VALUES('" + descricao + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
         }
 
-        public void alterar(String descricao, int idClassificacao, String idCategoria)
+        public void alterar(String descricao, String idCategoria)
         {
             String SQL = "UPDATE dbo.Categoria";
-            SQL += " SET descricao = '" + descricao + "', idClassificacao = " + Convert.ToInt32(idClassificacao);
+            SQL += " SET descricao = '" + descricao + "'";
             SQL += " WHERE  idCategoria =  " + idCategoria;
 
             Conexao oConexao = new Conexao("SQLServer");
@@ -34,7 +33,7 @@ namespace Persistencia
             oConexao.fechaConexao();
         }
 
-        public void apagar(String idCategoria, String descricao, int idClassificacao)
+        public void apagar(String idCategoria, String descricao)
         {
             String SQL = "DELETE dbo.Categoria WHERE idCategoria =" + idCategoria;
 
@@ -45,7 +44,7 @@ namespace Persistencia
 
         public DataSet consultarTodos()
         {
-            String SQL = "SELECT * FROM dbo.Categoria";
+            String SQL = "SELECT idCategoria as ID, descricao as Descrição FROM dbo.Categoria";
 
             Conexao oConexao = new Conexao("SQLServer");
 

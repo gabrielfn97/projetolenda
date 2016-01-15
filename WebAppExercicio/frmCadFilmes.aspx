@@ -11,18 +11,20 @@
     <form id="form1" runat="server">
     <div>
     
+        Nome do Filme:
+        <asp:TextBox ID="txtNomeFilme" runat="server"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
         <asp:Label ID="Label1" runat="server" Text="idFilmes: " Visible="False"></asp:Label>
         <asp:TextBox ID="txtidFilmes" runat="server" Visible="False"></asp:TextBox>
         <br />
-    
-        Nome do Filme:
-        <asp:TextBox ID="txtNomeFilme" runat="server"></asp:TextBox>
-        <br />
         Classificação:
-        <asp:TextBox ID="txtClassificacao" runat="server"></asp:TextBox>
+        <asp:DropDownList ID="cboClassificacao" runat="server">
+        </asp:DropDownList>
         <br />
         Gênero:
-        <asp:TextBox ID="txtGenero" runat="server"></asp:TextBox>
+        <asp:DropDownList ID="cboGenero" runat="server">
+        </asp:DropDownList>
         <br />
         Iframe Youtube:
         <asp:TextBox ID="txtIframe" runat="server"></asp:TextBox>
@@ -42,11 +44,14 @@
         Nacionalidade:
         <asp:TextBox ID="txtNacionalidade" runat="server"></asp:TextBox>
         <br />
+        <br />
         <asp:Button ID="btnInserir" runat="server" Text="Inserir" OnClick="btnInserir_Click" />
 &nbsp;<asp:Button ID="btnAlterar" runat="server" Text="Alterar" Width="47px" OnClick="btnAlterar_Click" />
 &nbsp;<asp:Button ID="btnApagar" runat="server" Text="Apagar" OnClick="btnApagar_Click1"  />
     
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Listar Todos Filmes" />
+        &nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Listar Todos Filmes" />
+    
+        <br />
     
         <br />
     

@@ -12,10 +12,13 @@
     
         <asp:Label ID="Label1" runat="server" Text="Dados Complementares"></asp:Label>
         <br />
-        <br />
         <asp:Label ID="Label2" runat="server" Text="idDadosComplementares :" Visible="False"></asp:Label>
 &nbsp;&nbsp;
         <asp:TextBox ID="txtidDadosComplementares" runat="server" Visible="False"></asp:TextBox>
+        <br />
+        <asp:Label ID="Label10" runat="server" Text="Usuario: "></asp:Label>
+        <asp:DropDownList ID="cboUsuarios" runat="server">
+        </asp:DropDownList>
         <br />
         <asp:Label ID="Label3" runat="server" Text="Endereço :"></asp:Label>
 &nbsp;&nbsp;
@@ -44,9 +47,10 @@
         <asp:Label ID="Label8" runat="server" Text="Sexo :"></asp:Label>
 &nbsp;<asp:TextBox ID="txtSexo" runat="server"></asp:TextBox>
         <br />
+        <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Inserir" />
-        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Alterar" />
-        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Apagar" />
+        &nbsp;<asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Alterar" />
+        &nbsp;<asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Apagar" />
         <br />
         <br />
         <asp:GridView ID="gdvDadosComplementares" runat="server" AutoGenerateSelectButton="True" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gdvDadosComplementares_SelectedIndexChanged">

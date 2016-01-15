@@ -18,6 +18,9 @@
         <br />
         <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnInserir_Click1" />
     
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Esqueci minha senha" />
+    
     </div>
     </form>
 </body>

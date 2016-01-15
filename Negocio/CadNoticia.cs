@@ -30,7 +30,7 @@ namespace Negocio
         public void apagar(String idNoticia, String noticia, String data, String TipoNoticia)
         {
             pCadNoticia objnoticia = new pCadNoticia();
-            objnoticia.alterar(idNoticia, noticia, data, TipoNoticia);
+            objnoticia.apagar(idNoticia, noticia, data, TipoNoticia);
         }
 
         public DataSet consultarTodos()

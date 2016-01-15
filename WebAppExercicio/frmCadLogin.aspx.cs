@@ -33,6 +33,7 @@ namespace WebAppExercicio
         {
             Usuarios objCadLogin = new Usuarios();
             objCadLogin.inserir(txtEmail.Text, txtUsuario.Text, txtSenha.Text);
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void btnAlterar_Click(object sender, EventArgs e)

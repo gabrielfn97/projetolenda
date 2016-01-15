@@ -23,7 +23,7 @@ namespace Persistencia
 
         public void inserir(String NomeFilmes, String Classificacao, String Genero, String Iframe, String UrlImg, String Nota, String DataLacamento, String AtoresPrincipais, String Nacionalidade)
         {
-            String SQL = "INSERT INTO dbo.CadFilmes(NomeFilmes, Classificacao, Genero, Iframe, UrlImg, Nota, DataLacamento, AtoresPrincipais, Nacionalidade) VALUES('" + NomeFilmes + "','" + Classificacao + "','" + Genero + "','" + Iframe + "','" + UrlImg + "','" + Nota + "','" + DataLacamento + "','" + AtoresPrincipais + "','" + Nacionalidade + "')";
+            String SQL = "INSERT INTO dbo.CadFilmes1(nome, fkClassificacao, fkGenero, iframe, urlimag, nota, dataLancamento, atoresprincipais, nacionalidade) VALUES('" + NomeFilmes + "','" + Classificacao + "','" + Genero + "','" + Iframe + "','" + UrlImg + "','" + Nota + "','" + DataLacamento + "','" + AtoresPrincipais + "','" + Nacionalidade + "')";
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
             oConexao.fechaConexao();
@@ -31,8 +31,8 @@ namespace Persistencia
 
         public void alterar(String NomeFilmes, String Classificacao, String Genero, String Iframe, String UrlImg, String Nota, String DataLacamento, String AtoresPrincipais, String Nacionalidade, String idFilmes)
         {
-            String SQL = "UPDATE dbo.CadFilmes";
-            SQL += " SET NomeFilmes = '" + NomeFilmes + "',  Classificacao = '" +  Classificacao + "', Genero = '" + Genero + "', Iframe = '" + Iframe +"', UrlImg = '" + UrlImg +"', Nota = '" +Nota+"', DataLacamento = '" + DataLacamento+ "', AtoresPrincipais = '" + AtoresPrincipais+"', Nacionalidade = '" + Nacionalidade +"'";
+            String SQL = "UPDATE dbo.CadFilmes1";
+            SQL += " SET nome = '" + NomeFilmes + "',  fkClassificacao = '" +  Classificacao + "', fkGenero = '" + Genero + "', iframe = '" + Iframe +"', urlimag = '" + UrlImg +"', nota = '" + Nota +"', dataLancamento = '" + DataLacamento+ "', atoresprincipais = '" + AtoresPrincipais+"', nacionalidade = '" + Nacionalidade +"'";
             SQL += " WHERE idFilmes = " + idFilmes;
 
             Conexao oConexao = new Conexao("SQLServer");
@@ -44,7 +44,7 @@ namespace Persistencia
 
         public void apagar(String idFilmes,String NomeFilmes, String Classificacao, String Genero, String Iframe, String UrlImg, String Nota, String DataLacamento, String AtoresPrincipais, String Nacionalidade)
         {
-            String SQL = "DELETE dbo.CadFilmes WHERE idFilmes =" + idFilmes;
+            String SQL = "DELETE dbo.CadFilmes1 WHERE idFilmes =" + idFilmes;
 
             Conexao oConexao = new Conexao("SQLServer");
             oConexao.executeNoQuery(SQL);
@@ -53,7 +53,7 @@ namespace Persistencia
 
         public DataSet consultarTodos()
         {
-            String SQL = "SELECT * FROM dbo.CadFilmes";
+            String SQL = "SELECT idFilmes as ID, nome as Nome_do_Filme, fkClassificacao as Classificação_Indicativa, fkGenero as Genero, nota as Nota, atoresprincipais as Atores, nacionalidade as Nacionalidade, iframe as URL_YouTube, urlimag as Link_da_Imagem, dataLancamento as Data_do_Lançamento FROM dbo.CadFilmes1 inner join dbo.Categoria on idCategoria = fkClassificacao inner join dbo.Generos on idGeneros = fkGenero";
 
             Conexao oConexao = new Conexao("SQLServer");
 
@@ -67,7 +67,7 @@ namespace Persistencia
         }
         public DataSet dtListarTodosfilmes()
         {
-            String SQL = "SELECT NomeFilmes, Classificacao, Genero, Nota, AtoresPrincipais, Nacionalidade FROM dbo.CadFilmes";
+            String SQL = "SELECT nome as Nome_do_Filme, fkClassificacao as Classificação_Indicativa, fkGenero as Genero, nota as Nota, atoresprincipais as Atores, nacionalidade as Nacionalidade FROM dbo.CadFilmes1";
 
             Conexao oConexao = new Conexao("SQLServer");
 

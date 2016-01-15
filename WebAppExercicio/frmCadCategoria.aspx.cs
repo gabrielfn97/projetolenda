@@ -35,27 +35,26 @@ namespace WebAppExercicio
             GridViewRow row = gdvCadCategoria.SelectedRow;
             txtidCategoria.Text = Server.HtmlDecode(row.Cells[1].Text);
             txtdescricao.Text = Server.HtmlDecode(row.Cells[2].Text);
-            txtNdoFilme.Text = Server.HtmlDecode(row.Cells[3].Text);
         }
 
         protected void btnInserir_Click1(object sender, EventArgs e)
         {
             Categoria objCategoria = new Categoria();
-            objCategoria.inserir(txtdescricao.Text, txtNdoFilme.Text);
+            objCategoria.inserir(txtidCategoria.Text, txtdescricao.Text);
             Response.Redirect(Request.RawUrl);
         }
 
         protected void btnAlterar_Click1(object sender, EventArgs e)
         {
             Categoria objCategoria = new Categoria();
-            objCategoria.alterar(txtdescricao.Text, Convert.ToInt32(txtNdoFilme.Text), txtidCategoria.Text);
+            objCategoria.alterar(txtidCategoria.Text, txtdescricao.Text);
             Response.Redirect(Request.RawUrl);
         }
 
         protected void btnApagar_Click1(object sender, EventArgs e)
         {
             Categoria objCategoria = new Categoria();
-            objCategoria.apagar(txtidCategoria.Text, txtdescricao.Text, Convert.ToInt32(txtNdoFilme.Text));
+            objCategoria.apagar(txtidCategoria.Text, txtdescricao.Text);
             Response.Redirect(Request.RawUrl);
         }
 

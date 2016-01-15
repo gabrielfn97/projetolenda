@@ -75,5 +75,33 @@ namespace Persistencia
             oConexao.fechaConexao();           
         }
 
+        public void RecSenha(String idCadLogin, String email, String usuario)
+        {
+            String SQL = "SELECT idCadLogin, email, usuario FROM dbo.CadLogin WHERE email = '" + email + "'  AND usuario= '" + usuario + "'";
+            Conexao oConexao = new Conexao("SQLServer");
+
+            SqlDataReader dr = oConexao.executeReader(SQL);
+
+            while (dr.Read())
+            {
+                this.idCadLogin = Convert.ToString(dr["idCadLogin"]);
+            }
+            dr.Close();
+
+            oConexao.fechaConexao();
+        }
+
+        public void RecSenha2(String idCadLogin, String usuario, String senha)
+        {
+          
+            String SQL = "SELECT idCadLogin, usuario , senha FROM dbo.CadLogin UPDATE dbo.CadLogin";
+            SQL += " SET senha = " + senha;
+            idCadLogin = Convert.ToString("idCadLogin");
+            SQL += " WHERE idCadLogin = " + idCadLogin;
+            Conexao oConexao = new Conexao("SQLServer");
+            oConexao.executeNoQuery(SQL);
+            oConexao.fechaConexao();
+
+        }
     }
 }

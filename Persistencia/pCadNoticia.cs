@@ -29,7 +29,7 @@ namespace Persistencia
         public void alterar(String idNoticia, String noticia, String data, String TipoNoticia)
         {
             String SQL = "UPDATE dbo.noticia";
-            SQL += " SET noticia = '" + noticia + "', data = '" + data + "' ,  '"+TipoNoticia+ "')";
+            SQL += " SET noticia = '" + noticia + "', data = '" + data + "' , TipoNoticia = '" + TipoNoticia + "'";
             SQL += " WHERE idNoticia = " + idNoticia;
 
             Conexao oConexao = new Conexao("SQLServer");
@@ -48,7 +48,7 @@ namespace Persistencia
 
         public DataSet consultarTodos()
         {
-            String SQL = "SELECT * FROM dbo.noticia";
+            String SQL = "SELECT idNoticia as ID, noticia as Noticia, data as Data, TipoNoticia as Tipo FROM dbo.noticia";
 
             Conexao oConexao = new Conexao("SQLServer");
 
@@ -62,7 +62,7 @@ namespace Persistencia
         }
         public DataSet consultarNoticiasCinema()
         {
-            String SQL = "SELECT * FROM dbo.noticia WHERE TipoNoticia = '%cinema%' ";
+            String SQL = "SELECT * FROM dbo.noticia WHERE TipoNoticia = 'cinema' ";
 
             Conexao oConexao = new Conexao("SQLServer");
 

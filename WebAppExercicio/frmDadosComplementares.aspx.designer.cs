@@ -49,6 +49,24 @@ namespace WebAppExercicio {
         protected global::System.Web.UI.WebControls.TextBox txtidDadosComplementares;
         
         /// <summary>
+        /// Controle Label10.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label10;
+        
+        /// <summary>
+        /// Controle cboUsuarios.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList cboUsuarios;
+        
+        /// <summary>
         /// Controle Label3.
         /// </summary>
         /// <remarks>

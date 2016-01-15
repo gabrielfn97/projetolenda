@@ -8,22 +8,26 @@
 </head>
 <body>
     <form id="form1" runat="server">
+    <div>
+    
+        <br />
+        <asp:Label ID="Label1" runat="server" Text="Classificação de Idade: "></asp:Label>
+        <asp:TextBox ID="txtdescricao" runat="server"></asp:TextBox>
+    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
         <asp:Label ID="Label3" runat="server" Text="idCategoria: " Visible="False"></asp:Label>
         <asp:TextBox ID="txtidCategoria" runat="server" Visible="False"></asp:TextBox>
         <br />
-        <asp:Label ID="Label1" runat="server" Text="Classificação de Idade:"></asp:Label>
-        <asp:TextBox ID="txtdescricao" runat="server"></asp:TextBox>
-    <div>
-    
-        <asp:Label ID="Label2" runat="server" Text="Numero do Filme"></asp:Label>
-        <asp:TextBox ID="txtNdoFilme" runat="server"></asp:TextBox>
     
         <br />
         <asp:Button ID="btnInserir" runat="server"  Text="Inserir" OnClick="btnInserir_Click1" />
     
-        <asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click1" />
+        &nbsp;<asp:Button ID="btnAlterar" runat="server" Text="Alterar" OnClick="btnAlterar_Click1" />
     
-        <asp:Button ID="btnApagar" runat="server" Text="Apagar" OnClick="btnApagar_Click1" />
+        &nbsp;<asp:Button ID="btnApagar" runat="server" Text="Apagar" OnClick="btnApagar_Click1" />
+    
+        <br />
     
     </div>
         <asp:GridView ID="gdvCadCategoria" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal" Height="42px" Width="18px" OnSelectedIndexChanged="gdvCadCategoria_SelectedIndexChanged1">

@@ -32,23 +32,21 @@ namespace WebAppExercicio
         protected void Button1_Click(object sender, EventArgs e)
         {
             CadCritica objCadCritica = new CadCritica();
-            objCadCritica.inserir( txtNome.Text,txtCritica.Text,txtData.Text);
+            objCadCritica.inserir(txtNome.Text,txtCritica.Text,txtData.Text);
             Response.Redirect(Request.RawUrl);
         }
-
-
 
         protected void Button2_Click1(object sender, EventArgs e)
         {
             CadCritica objCadCritica = new CadCritica();
-            objCadCritica.alterar(txtNome.Text, txtCritica.Text, txtData.Text);
+            objCadCritica.alterar(txtidCritica.Text, txtNome.Text, txtCritica.Text, txtData.Text);
             Response.Redirect(Request.RawUrl);
         }
 
         protected void Button3_Click1(object sender, EventArgs e)
         {
             CadCritica objCadCritica = new CadCritica();
-            objCadCritica.apagar(txtNome.Text,txtCritica.Text,txtData.Text);
+            objCadCritica.apagar(txtidCritica.Text,txtNome.Text,txtCritica.Text,txtData.Text);
             Response.Redirect(Request.RawUrl);
         }
 
@@ -57,15 +55,15 @@ namespace WebAppExercicio
         {
             GridViewRow row = gdvCadCritica.SelectedRow;
 
-            txtNome.Text = Server.HtmlDecode(row.Cells[1].Text);
-            txtData.Text = Server.HtmlDecode(row.Cells[3].Text);
-            txtCritica.Text = Server.HtmlDecode(row.Cells[2].Text);
+            txtidCritica.Text = Server.HtmlDecode(row.Cells[1].Text);
+            txtNome.Text = Server.HtmlDecode(row.Cells[2].Text);
+            txtData.Text = Server.HtmlDecode(row.Cells[4].Text);
+            txtCritica.Text = Server.HtmlDecode(row.Cells[3].Text);
         }
 
         protected void Button4_Click(object sender, EventArgs e)
         {
             Response.Redirect("reTodasCriticas.aspx");
-        
         }
     }
 }
