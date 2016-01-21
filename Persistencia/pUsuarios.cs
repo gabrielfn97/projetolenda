@@ -75,9 +75,10 @@ namespace Persistencia
             oConexao.fechaConexao();           
         }
 
-        public void RecSenha(String idCadLogin, String email, String usuario)
+        public void RecSenha(String idCadLogin, String email, String usuario, String senha)
         {
-            String SQL = "SELECT idCadLogin, email, usuario FROM dbo.CadLogin WHERE email = '" + email + "'  AND usuario= '" + usuario + "'";
+            String SQL = "SELECT idCadLogin, email, usuario, senha FROM dbo.CadLogin WHERE email = '" + email + "'  AND usuario= '" + usuario + "' UPDATE dbo.CadLogin";
+            SQL += " SET senha = " + senha;
             Conexao oConexao = new Conexao("SQLServer");
 
             SqlDataReader dr = oConexao.executeReader(SQL);
@@ -89,19 +90,6 @@ namespace Persistencia
             dr.Close();
 
             oConexao.fechaConexao();
-        }
-
-        public void RecSenha2(String idCadLogin, String usuario, String senha)
-        {
-          
-            String SQL = "SELECT idCadLogin, usuario , senha FROM dbo.CadLogin UPDATE dbo.CadLogin";
-            SQL += " SET senha = " + senha;
-            idCadLogin = Convert.ToString("idCadLogin");
-            SQL += " WHERE idCadLogin = " + idCadLogin;
-            Conexao oConexao = new Conexao("SQLServer");
-            oConexao.executeNoQuery(SQL);
-            oConexao.fechaConexao();
-
         }
     }
 }

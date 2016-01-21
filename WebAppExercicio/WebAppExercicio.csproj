@@ -187,7 +187,6 @@
     <Content Include="frmDadosComplementares.aspx" />
     <Content Include="frmGeneros.aspx" />
     <Content Include="frmLogin.aspx" />
-    <Content Include="frmRecSenha2.aspx" />
     <Content Include="frmRelatorioFilmes.aspx" />
     <Content Include="index.aspx" />
     <Content Include="reCidades.aspx" />
@@ -288,13 +287,6 @@
     </Compile>
     <Compile Include="frmLogin.aspx.designer.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="frmRecSenha2.aspx.cs">
-      <DependentUpon>frmRecSenha2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmRecSenha2.aspx.designer.cs">
-      <DependentUpon>frmRecSenha2.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmRelatorioFilmes.aspx.cs">
       <DependentUpon>frmRelatorioFilmes.aspx</DependentUpon>

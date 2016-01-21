@@ -46,17 +46,11 @@ namespace Negocio
             this.idUsuario = objCadLogin.idCadLogin;
         }
 
-        public void RecSenha(String idCadLogin, String email, String usuario)
+        public void RecSenha(String idCadLogin, String email, String usuario, String senha)
         {
             pUsuarios objRecSenha = new pUsuarios();
-            objRecSenha.RecSenha(idCadLogin, email, usuario);
+            objRecSenha.RecSenha(idCadLogin, email, usuario, senha);
             this.idUsuario = objRecSenha.idCadLogin;
-        }
-
-        public void RecSenha2(String idCadLogin, String usuario, String senha)
-        {
-            pUsuarios objCadLogin = new pUsuarios();
-            objCadLogin.RecSenha2(idCadLogin, usuario, senha);
         }
     }
 }

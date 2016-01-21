@@ -19,12 +19,12 @@ namespace WebAppExercicio
         protected void btnRecSenha_Click(object sender, EventArgs e)
         {
             Usuarios objLogar =  new Usuarios();
-            objLogar.RecSenha(txtidCadLogin.Text,txtEmail.Text, txtUsuario.Text);
+            objLogar.RecSenha(txtidCadLogin.Text,txtEmail.Text, txtUsuario.Text, txtSenha.Text);
 
             if (objLogar.idUsuario != null)
             {
                 Session["Usuario"] = objLogar.idUsuario;
-                Response.Redirect("frmRecSenha2.aspx");
+                Response.Redirect("frmLogin.aspx");
             }
             else
             {
