@@ -27,7 +27,7 @@
         <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
         <br />
         <asp:Label ID="Label6" runat="server" Text="Digite sua nova senha: "></asp:Label>
-        <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnRecSenha" runat="server" OnClick="btnRecSenha_Click" Text="Recuperar Senha" />
